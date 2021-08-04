@@ -1,33 +1,20 @@
-# Website
+# Web Analytics Handbook
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+개발자를 위한 웹 사용자 데이터 분석 핸드북
+https://everyanalytics.github.io/web-analytics-handbook/
 
-## Installation
+## 개발 명령어
 
 ```console
+# 의존성 설치
 yarn install
-```
 
-## Local Development
-
-```console
+# 로컬 서버 띄우기
 yarn start
-```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```console
+# 빌드
 yarn build
-```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-```console
+# 배포
 GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 ```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
