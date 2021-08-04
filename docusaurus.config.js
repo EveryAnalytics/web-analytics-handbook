@@ -7,13 +7,13 @@ const TITLE = "Web Analytics Handbook";
 module.exports = {
   title: TITLE,
   tagline: "개발자를 위한 웹 사용자 데이터 분석 핸드북",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://EveryAnalytics.github.io/web-analytics-handbook",
+  baseUrl: "/web-analytics-handbook/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "EveryAnalytics", // Usually your GitHub org/user name.
+  projectName: "web-analytics-handbook", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: TITLE,
@@ -51,7 +51,7 @@ module.exports = {
           items: [
             {
               label: "Tutorial",
-              to: "/docs/intro",
+              to: "/docs/handbook/intro",
             },
           ],
         },
