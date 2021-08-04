@@ -2,17 +2,15 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 핸드북 읽는법
 
 Let's discover **Docusaurus in less than 5 minutes**.
 
-## Getting Started
+## 사용자 데이터 수집의 개념부터 잡고 싶다면
 
-Get started by **creating a new site**.
+ㅁㅁ 부터 천천히 읽으세요.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-## Generate a new site
+## 중급자: Test
 
 Generate a new Docusaurus site using the **classic template**:
 

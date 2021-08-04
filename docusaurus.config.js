@@ -6,7 +6,7 @@ const TITLE = "Web Analytics Handbook";
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: TITLE,
-  tagline: "개발자를 위한 웹 분석 핸드북",
+  tagline: "개발자를 위한 웹 사용자 데이터 분석 핸드북",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -24,23 +24,24 @@ module.exports = {
       items: [
         {
           type: "doc",
-          docId: "intro",
+          // docId: "intro",
+          docId: "handbook/intro",
           position: "left",
           label: "📚 핸드북",
         },
         {
           type: "doc",
-          docId: "intro",
+          docId: "react-analytics-provider/intro",
           position: "left",
           label: "💡 react-analytics-provider",
         },
         { to: "/blog", label: "👾 블로그", position: "left" },
-        {
-          type: "doc",
-          docId: "intro",
-          position: "left",
-          label: "🙋 용어사전",
-        },
+        // {
+        //   type: "doc",
+        //   docId: "intro",
+        //   position: "left",
+        //   label: "🙋 용어사전",
+        // },
         {
           href: "https://github.com/EveryAnalytics/web-analytics-handbook",
           label: "GitHub",
