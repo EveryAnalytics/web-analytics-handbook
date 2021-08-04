@@ -24,7 +24,6 @@ module.exports = {
       items: [
         {
           type: "doc",
-          // docId: "intro",
           docId: "handbook/intro",
           position: "left",
           label: "📚 핸드북",
@@ -36,12 +35,7 @@ module.exports = {
           label: "💡 react-analytics-provider",
         },
         { to: "/blog", label: "👾 블로그", position: "left" },
-        // {
-        //   type: "doc",
-        //   docId: "intro",
-        //   position: "left",
-        //   label: "🙋 용어사전",
-        // },
+        { to: "/wiki", label: "🙋 용어사전", position: "left" },
         {
           href: "https://github.com/EveryAnalytics/web-analytics-handbook",
           label: "GitHub",
