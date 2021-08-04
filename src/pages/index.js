@@ -13,12 +13,22 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div>웹 분석이 궁금하다면</div>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"
           >
-            Docusaurus Tutorial - 5min ⏱️
+            핸드북 읽기
+          </Link>
+        </div>
+        <div style={{ marginTop: 10 }}>코드에 적용하려면</div>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/intro"
+          >
+            react-analytics-provider
           </Link>
         </div>
       </div>

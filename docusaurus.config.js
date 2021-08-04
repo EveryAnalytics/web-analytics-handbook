@@ -6,7 +6,7 @@ const TITLE = "Web Analytics Handbook";
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: TITLE,
-  tagline: "개발자를 위한 웹사이트 분석 핸드북",
+  tagline: "개발자를 위한 웹 분석 핸드북",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
