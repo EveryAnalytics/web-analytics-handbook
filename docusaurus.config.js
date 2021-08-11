@@ -7,7 +7,7 @@ const TITLE = "Web Analytics Handbook";
 module.exports = {
   title: TITLE,
   tagline: "개발자를 위한 웹 사용자 데이터 분석 핸드북",
-  url: "https://EveryAnalytics.github.io/web-analytics-handbook",
+  url: "https://EveryAnalytics.github.io",
   baseUrl: "/web-analytics-handbook/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
