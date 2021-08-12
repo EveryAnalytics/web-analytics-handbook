@@ -128,7 +128,7 @@ function Footer(): JSX.Element | null {
                 // Developer provided the HTML, so assume it's safe.
                 // eslint-disable-next-line react/no-danger
                 dangerouslySetInnerHTML={{
-                  __html: 'Footer.tsx 입니다!',
+                  __html: copyright,
                 }}
               />
             ) : null}
