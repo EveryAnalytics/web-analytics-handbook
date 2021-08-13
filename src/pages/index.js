@@ -5,6 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
+import Footer from "../theme/Footer";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -54,11 +55,13 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
+      noFooter={true}
     >
       <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
+      <Footer />
     </Layout>
   );
 }
