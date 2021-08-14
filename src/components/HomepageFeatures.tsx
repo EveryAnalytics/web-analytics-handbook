@@ -65,33 +65,33 @@ export default function HomepageFeatures() {
   );
 }
 
-const FeatureIconWrapper = styled.div({
-  textAlign: 'center'
-});
+const FeatureIconWrapper = styled.div`
+  text-align: center;
+`;
 
-const FeatureInfo = styled.div({
-  textAlign: 'center',
-  paddingLeft: '1rem',
-  paddingRight: '1rem'
-});
+const FeatureInfo = styled.div`
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+`;
 
-const featureIconStyle = css({
-  height: '200px',
-  width: '200px'
-});
+const featureIconStyle = css`
+  height: 200px;
+  width: 200px;
+`;
 
-const FeatureTitle = styled.h3();
-const FeatureDescription = styled.p();
-const FeatureContainer = styled.div(
-  mq()({
+const FeatureTitle = styled.h3``;
+const FeatureDescription = styled.p``;
+const FeatureContainer = styled.div`
+  ${mq()({
     flex: ['0 0 100%', '0 0 100%', '0 0 calc(4/12 * 100%)'],
     maxWidth: ['100%', '100%', 'calc(4/12 * 100%)']
-  })
-);
+  })}
+`;
 
-const featuresStyle = css({
-  display: 'flex',
-  alignItems: 'center',
-  padding: '2rem 0',
-  width: '100%',
-})
+const featuresStyle = css`
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+`;
