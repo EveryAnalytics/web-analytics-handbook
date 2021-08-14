@@ -84,8 +84,8 @@ const FeatureTitle = styled.h3``;
 const FeatureDescription = styled.p``;
 const FeatureContainer = styled.div`
   ${mq()({
-    flex: ['0 0 100%', '0 0 100%', '0 0 calc(4/12 * 100%)'],
-    maxWidth: ['100%', '100%', 'calc(4/12 * 100%)']
+    flex: ['0 0 100%', '0 0 calc(4/12 * 100%)'],
+    maxWidth: ['100%', 'calc(4/12 * 100%)']
   })}
 `;
 
