@@ -1,6 +1,7 @@
 import React from "react";
-import clsx from "clsx";
-import styles from "./HomepageFeatures.module.css";
+import { css } from '@emotion/react';
+import styled from '@emotion/styled';
+import mq from '../theme/mq';
 
 const FeatureList = [
   {
@@ -38,21 +39,21 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx("col col--4")}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
-      </div>
-    </div>
+    <FeatureContainer>
+      <FeatureIconWrapper>
+        <Svg css={featureIconStyle} alt={title} />
+      </FeatureIconWrapper>
+      <FeatureInfo>
+        <FeatureTitle>{title}</FeatureTitle>
+        <FeatureDescription>{description}</FeatureDescription>
+      </FeatureInfo>
+    </FeatureContainer>
   );
 }
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <section css={featuresStyle}>
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (
@@ -63,3 +64,34 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+
+const FeatureIconWrapper = styled.div`
+  text-align: center;
+`;
+
+const FeatureInfo = styled.div`
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+`;
+
+const featureIconStyle = css`
+  height: 200px;
+  width: 200px;
+`;
+
+const FeatureTitle = styled.h3``;
+const FeatureDescription = styled.p``;
+const FeatureContainer = styled.div`
+  ${mq()({
+    flex: ['0 0 100%', '0 0 calc(4/12 * 100%)'],
+    maxWidth: ['100%', 'calc(4/12 * 100%)']
+  })}
+`;
+
+const featuresStyle = css`
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+`;
