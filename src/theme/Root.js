@@ -9,22 +9,24 @@ const getGAId = () => {
   return GA_ID;
 };
 
-const createInitializeGA = () => {
-  const GA_ID = getGAId();
-  const successLog = `console.info("✅GA가 초기화 되었습니다.")`;
-  const warnningLog = `console.warn("GA가 초기화 실패되었습니다.")`;
-  return `
-    ${ GA_ID ? successLog : warnningLog }
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-    gtag("config", "${GA_ID}");
-  `
+const GA_ID = getGAId();
+
+const createInitializeGA = (GA_ID) => {
+  if(GA_ID) {
+    return `
+      console.info("✅GA가 초기화 되었습니다.")
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "${GA_ID}");
+    `
+  }
+  return `console.warn("GA가 초기화 실패되었습니다.");`;
 }
 
-const initializeGA = createInitializeGA();
+const initializeGA = createInitializeGA(GA_ID);
 
 function Root({ children }) {
   return (
