@@ -26,6 +26,15 @@ const createInitializeGA = (GA_ID) => {
   return `console.warn("GA가 초기화 실패되었습니다.");`;
 }
 
+const createGtagPath = (GA_ID) => {
+  if(GA_ID) {
+    return `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  }
+  console.warn(`[web-analytics-handbook] Warnning Can't create gtag path. Because "GA_ID" is not defined.`);
+  return "";
+}
+
+const gtagPath = createGtagPath(GA_ID);
 const initializeGA = createInitializeGA(GA_ID);
 
 function Root({ children }) {
@@ -35,7 +44,7 @@ function Root({ children }) {
         <Head>
           <script
             async
-            src="https://www.googletagmanager.com/gtag/js?id=G-GZ339RG282"
+            src={`${gtagPath}`}
           />
           <script>{initializeGA}</script>
         </Head>
