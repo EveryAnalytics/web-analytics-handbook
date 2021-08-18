@@ -6,5 +6,33 @@
   {
     "name": "세그먼트 (Segment)",
     "description": "애널리틱스 데이터의 하위 집합. 즉, 데이터를 세분화하기 위한 수단입니다."
+  },
+  {
+    "name": "Universal Analytics",
+    "description": "구글 애널리틱스의 이전 버전으로, 현재 최신 버전은 GA4"
+  },
+  {
+    "name": "GA의 데이터 구조",
+    "description": "관리자 입장에서는 계정-속성-보기로, 사용자 입장에서는 유저-세션-히트로 나누어 생각할 수 있다."
+  },
+  {
+    "name": "Product Analytics",
+    "description": "고객이 제품에 참여하는(engage) 방식을 이해하는 데 사용하는 프로세스입니다. "
+  },
+  {
+    "name": "Session(세션)",
+    "description": "GA에서 Session은 사용자의 특정 활동 시간이며, 특정 시간안에서 사용자의 여러 상호작용의 집합입니다. (기본 설정 30분)"
+  },
+  {
+    "name": "목표(Goal)",
+    "description": "페이지/화면 조회 수, 머문 시간, 구매와 같은 비즈니스의 성공에 기여하는 완료된 액션."
+  },
+  {
+    "name": "전환(Conversion)",
+    "description": "목표로 설정된 액션이 수행되는 것. (연관: 전환율)"
+  },
+  {
+    "name": "태그(Tag)",
+    "description": "태그를 통해 외부 링크나 GA 이벤트 등을 추적할 수 있다."
   }
 ]
