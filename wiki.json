@@ -6,5 +6,61 @@
   {
     "name": "세그먼트 (Segment)",
     "description": "애널리틱스 데이터의 하위 집합. 즉, 데이터를 세분화하기 위한 수단입니다."
+  },
+  {
+    "name": "이탈률(Bounce Rate)",
+    "description": "이탈률은 처음 접근한 페이지에서 바로 떠난 비율이다."
+  },
+  {
+    "name": "종료율(Exit Rate)",
+    "description": "종료율은 해당 페이지에서 얼마나 종료했는지를 나타내는 비율이다."
+  },
+  {
+    "name": "Audience(잠재 고객)",
+    "description": "특정 기간 동안 공통된 특성, 속성 또는 경험을 보여준 사용자 그룹/분류(Segement)"
+  },
+  {
+    "name": "Referral, Self-Referrals",
+    "description": "Referral은 이전 웹사이트에서 나의 웹사이트로 엑세스해 유입될 때 기록되는 이전 웹사이트의 데이터"
+  },
+  {
+    "name": "필터(filter)",
+    "description": "보기(view)에 데이터가 쌓이기 전, 특정 데이터를 걸러 내거나 통과시키는 기능"
+  },
+  {
+    "name": "이벤트",
+    "description": "웹페이지 또는 화면 로드와는 별개로 측정할 수 있는 콘텐츠와 사용자의 상호작용"
+  },
+  {
+    "name": "Engagement",
+    "description": "사이트/앱에 방문한 유저의 모든 인터렉션"
+  },
+  {
+    "name": "Cohort",
+    "description": "유저들 중 공통적인 특징을 갖고 있어 특정 가능한 그룹"
+  },
+  {
+    "name": "Source/Medium",
+    "description": "트래픽의 오리진과 종류"
+  },
+  {
+    "name": "URL fragmentation 이슈",
+    "description": "URL fragmentation 이슈가 무엇인지 정의하고 그 해결방법을 다룹니다."
+  },
+  {
+    "name": "리마케팅 (Remarketing)",
+    "description": "사용자가 내 앱 또는 사이트에서 한 행동을 기반으로 광고를 다시 게재하는 기능"
+  },
+  {
+    "name": "권한 (Permission)",
+    "description": "관리 및 구성 작업을 처리하고, 애셋을 만들고 공유하며, 보고서 데이터를 읽고 보고서 데이터와 상호작용할 수 있는 자격"
+  },
+  {
+    "name": "Pivot Table",
+    "description": "데이터를 두 번째 차원으로 피벗하여 특정 보고서에 대한 표의 정보를 재정렬한 것으로, 측정 기준과 측정 항목으로 이루어져 있다."
+  },
+  {
+    "name": "Outbound link",
+    "description": "우리 웹사이트 내부가 아닌 외부의 다른 웹사이트로 연결되는 링크"
   }
 ]
