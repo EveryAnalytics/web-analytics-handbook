@@ -62,5 +62,9 @@
   {
     "name": "Outbound link",
     "description": "우리 웹사이트 내부가 아닌 외부의 다른 웹사이트로 연결되는 링크"
+  },
+  {
+    "name": "측정기준(Dimension)과 측정항목(Metrics)",
+    "description": "측정기준은 데이터의 속성, 측정항목은 정량적 측정 요소, 수치"
   }
 ]
