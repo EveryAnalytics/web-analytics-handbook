@@ -9,8 +9,6 @@ const usePagination = ({
   const maxPage = Math.ceil(source.length / offset);
 
   const [currentPage, setCurrentPage] = useState(initialPage);
-  const [isLastPage, setIsLastPage] = useState(false);
-  const [isFirstPage, setIsFirstPage] = useState(false);
   const [result, setResult] = useState([]);
 
   useEffect(() => {
@@ -18,8 +16,6 @@ const usePagination = ({
     const endIdx = startIdx + offset;
     
     setResult(source.slice(startIdx, endIdx));
-    setIsLastPage(currentPage === maxPage);
-    setIsFirstPage(currentPage === minPage);
   }, [currentPage]);
 
   const onPrevious = () => {
@@ -35,8 +31,8 @@ const usePagination = ({
   return {
     result,
     currentPage,
-    isLastPage,
-    isFirstPage,
+    isLastPage: currentPage === maxPage,
+    isFirstPage: currentPage === minPage,
     onPrevious,
     onNext
   };
