@@ -1,8 +1,17 @@
 {
-  "extends": "@tsconfig/docusaurus/tsconfig.json",
-  "include": ["src/"],
-  "compilerOptions": {
-    "types": ["node", "@emotion/react/types/css-prop"],
-    "resolveJsonModule": true
-  }
+    "extends": "@tsconfig/docusaurus/tsconfig.json",
+    "include": ["src/"],
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "baseUrl": "./src",
+        "paths": {
+            "*": [
+                "./*"
+            ]
+        },
+        "types": [
+            "node",
+            "@emotion/react/types/css-prop"
+        ]
+    }
 }

@@ -3,5 +3,11 @@ module.exports = {
     "@babel/preset-react",
     { "runtime": "automatic", "importSource": "@emotion/react" }
   ]],
-  plugins: ["@emotion/babel-plugin"]
+  plugins: ["@emotion/babel-plugin", [
+    "module-resolver",
+    {
+      "root": ["./src/"],
+      "extensions": [".ts", ".tsx", ".js", ".jsx"]
+    }
+  ]]
 };

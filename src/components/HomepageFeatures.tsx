@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import mq from '../theme/mq';
+import mq from 'theme/mq';
 
 const FeatureList = [
   {
