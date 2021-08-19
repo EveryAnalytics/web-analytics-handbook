@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import Head from "@docusaurus/Head";
 
 const GA_TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID;
