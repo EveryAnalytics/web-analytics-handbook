@@ -8,15 +8,15 @@
     "description": "애널리틱스 데이터의 하위 집합. 즉, 데이터를 세분화하기 위한 수단입니다."
   },
   {
-    "name": "이탈률(Bounce Rate)",
+    "name": "이탈률 (Bounce Rate)",
     "description": "이탈률은 처음 접근한 페이지에서 바로 떠난 비율이다."
   },
   {
-    "name": "종료율(Exit Rate)",
+    "name": "종료율 (Exit Rate)",
     "description": "종료율은 해당 페이지에서 얼마나 종료했는지를 나타내는 비율이다."
   },
   {
-    "name": "Audience(잠재 고객)",
+    "name": "Audience (잠재 고객)",
     "description": "특정 기간 동안 공통된 특성, 속성 또는 경험을 보여준 사용자 그룹/분류(Segement)"
   },
   {
@@ -24,7 +24,7 @@
     "description": "Referral은 이전 웹사이트에서 나의 웹사이트로 엑세스해 유입될 때 기록되는 이전 웹사이트의 데이터"
   },
   {
-    "name": "필터(filter)",
+    "name": "필터 (filter)",
     "description": "보기(view)에 데이터가 쌓이기 전, 특정 데이터를 걸러 내거나 통과시키는 기능"
   },
   {
@@ -64,7 +64,7 @@
     "description": "우리 웹사이트 내부가 아닌 외부의 다른 웹사이트로 연결되는 링크"
   },
   {
-    "name": "측정기준(Dimension)과 측정항목(Metrics)",
+    "name": "측정기준 (Dimension), 측정항목 (Metrics)",
     "description": "측정기준은 데이터의 속성, 측정항목은 정량적 측정 요소, 수치"
   },
   {
@@ -80,19 +80,19 @@
     "description": "고객이 제품에 참여하는(engage) 방식을 이해하는 데 사용하는 프로세스입니다. "
   },
   {
-    "name": "Session(세션)",
+    "name": "Session (세션)",
     "description": "GA에서 Session은 사용자의 특정 활동 시간이며, 특정 시간안에서 사용자의 여러 상호작용의 집합입니다. (기본 설정 30분)"
   },
   {
-    "name": "목표(Goal)",
+    "name": "목표 (Goal)",
     "description": "페이지/화면 조회 수, 머문 시간, 구매와 같은 비즈니스의 성공에 기여하는 완료된 액션."
   },
   {
-    "name": "전환(Conversion)",
+    "name": "전환 (Conversion)",
     "description": "목표로 설정된 액션이 수행되는 것. (연관: 전환율)"
   },
   {
-    "name": "태그(Tag)",
+    "name": "태그 (Tag)",
     "description": "태그를 통해 외부 링크나 GA 이벤트 등을 추적할 수 있다."
   }
 ]
