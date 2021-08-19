@@ -12,26 +12,27 @@ const getGAId = () => {
 const GA_ID = getGAId();
 
 const createInitializeGA = (GA_ID) => {
-  if(GA_ID) {
-    return `
-      console.info("✅GA가 초기화 되었습니다.")
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "${GA_ID}");
-    `
+  
+  if(GA_ID === undefined) {
+    return `console.warn("GA가 초기화 실패되었습니다.");`;  
   }
-  return `console.warn("GA가 초기화 실패되었습니다.");`;
+  return `
+    console.info("✅GA가 초기화 되었습니다.")
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "${GA_ID}");
+  `
 }
 
 const createGtagPath = (GA_ID) => {
-  if(GA_ID) {
-    return `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+  if(GA_ID === undefined) {
+    console.warn(`[web-analytics-handbook] Warnning Can't create gtag path. Because "GA_ID" is not defined.`);
+    return "";
   }
-  console.warn(`[web-analytics-handbook] Warnning Can't create gtag path. Because "GA_ID" is not defined.`);
-  return "";
+  return `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
 }
 
 const gtagPath = createGtagPath(GA_ID);
