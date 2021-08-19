@@ -3,6 +3,15 @@
 개발자를 위한 웹 사용자 데이터 분석 핸드북
 https://everyanalytics.github.io/web-analytics-handbook/
 
+## 환경 설정
+
+1. `.env`파일 추가
+
+```
+REACT_APP_GA_TRACKING_ID=트래킹아이디를적으세요.
+```
+
+
 ## 개발 명령어
 
 ```console
