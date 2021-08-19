@@ -1,7 +1,7 @@
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
-const PLUGINS_WEBPACK_CONFIGURE_PATH = './src/plugins/webpack-configure';
+const PLUGINS_WEBPACK_CONFIGURE_PATH = './src/plugins/webpack-configure/index.ts';
 
 const TITLE = "Web Analytics Handbook";
 
