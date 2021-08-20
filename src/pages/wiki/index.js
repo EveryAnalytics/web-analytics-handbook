@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import WikiTable from '../../components/WikiTable';
+import styled from '@emotion/styled';
 
 export default function Wiki() {
   const { siteConfig } = useDocusaurusContext();
@@ -11,10 +12,19 @@ export default function Wiki() {
       title={`${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <main>
-        <h1>용어사전</h1>
+      <Main className="container">
+        <Title>용어사전</Title>
         <WikiTable />
-      </main>
+      </Main>
     </Layout>
   );
 }
+
+const Main = styled.main`
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+`;
+
+const Title = styled.h1`
+  text-align: center;
+`;
