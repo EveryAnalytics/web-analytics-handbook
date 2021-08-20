@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "@docusaurus/Head";
+import React from 'react';
+import Head from '@docusaurus/Head';
 
 const initializeGA = `
   console.info("✅GA가 초기화 되었습니다.");
