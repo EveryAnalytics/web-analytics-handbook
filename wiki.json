@@ -72,7 +72,7 @@
     "description": "고객이 제품에 참여하는(engage) 방식을 이해하는 데 사용하는 프로세스입니다. "
   },
   {
-    "name": "Session (세션)",
+    "name": "세션 (Session)",
     "description": "GA에서 Session은 사용자의 특정 활동 시간이며, 특정 시간안에서 사용자의 여러 상호작용의 집합입니다. (기본 설정 30분)"
   },
   {
