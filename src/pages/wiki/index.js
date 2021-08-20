@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import WikiTable from '../../components/WikiTable';
 import styled from '@emotion/styled';
+import WikiSearch from '../../components/WikiSearch';
 
 export default function Wiki() {
   const { siteConfig } = useDocusaurusContext();
@@ -14,6 +15,7 @@ export default function Wiki() {
     >
       <Main className="container">
         <Title>용어사전</Title>
+        <WikiSearch />
         <WikiTable />
       </Main>
     </Layout>
