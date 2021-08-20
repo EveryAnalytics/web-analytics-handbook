@@ -4,19 +4,21 @@ import { FiSearch } from 'react-icons/all';
 
 export default function SearchInput() {
   return (
-    <div>
-      <InputWrapper>
-        <Input placeholder="Search" />
-        <SearchIcon />
-      </InputWrapper>
-    </div>
+    <InputWrapper>
+      <Input placeholder="Search" />
+      <SearchIcon />
+    </InputWrapper>
   );
 }
 
 const InputWrapper = styled.div`
   position: relative;
-  margin: 1rem 0 0;
+  margin-top: 12px;
   min-width: 600px;
+
+  @media (max-width: 680px) {
+    min-width: 100%;
+  }
 `;
 
 const Input = styled.input`

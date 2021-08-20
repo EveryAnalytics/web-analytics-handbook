@@ -25,7 +25,7 @@ export default function SearchFilter() {
 
 const Ul = styled.ul`
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 `;
 
 const Li = styled.li`
@@ -39,7 +39,7 @@ const Button = styled.button`
   align-items: center;
   width: 26px;
   height: 26px;
-  margin: 0 3px;
+  margin: 3px;
   border: 1px solid var(--ifm-color-gray-300);
   border-radius: 4px;
   background-color: #ffffff;

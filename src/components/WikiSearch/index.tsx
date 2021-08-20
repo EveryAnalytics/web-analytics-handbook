@@ -19,7 +19,7 @@ const SearchWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 1rem 0 2rem;
-  padding: 1.5rem;
+  padding: 1.5rem 1rem;
   border-radius: 8px;
   background-color: #fafafa;
 `;
