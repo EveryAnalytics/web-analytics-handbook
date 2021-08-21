@@ -14,11 +14,8 @@ export default function SearchInput() {
 const InputWrapper = styled.div`
   position: relative;
   margin-top: 12px;
-  min-width: 600px;
-
-  @media (max-width: 680px) {
-    min-width: 100%;
-  }
+  width: 100%;
+  max-width: 600px;
 `;
 
 const Input = styled.input`
