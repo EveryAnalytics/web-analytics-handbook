@@ -6,6 +6,7 @@ import WikiTable from '../../components/WikiTable';
 
 export default function Wiki() {
   const { siteConfig } = useDocusaurusContext();
+
   return (
     <Layout
       title={`${siteConfig.title}`}
