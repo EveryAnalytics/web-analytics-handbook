@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import mq from '../theme/mq';
+import mq from 'theme/mq';
 
 const FeatureList = [
   {
-    title: "DAU, GA... 먹는건가요?",
-    Svg: require("../../static/img/undraw_docusaurus_mountain.svg").default,
+    title: 'DAU, GA... 먹는건가요?',
+    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
         사용자 데이터 분석(Daily Active User, 전환율 측정 등)은 모던 웹
@@ -17,8 +17,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "개발자에게 필요한 웹 분석 지식",
-    Svg: require("../../static/img/undraw_docusaurus_tree.svg").default,
+    title: '개발자에게 필요한 웹 분석 지식',
+    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
         여러분의 프로젝트에 웹 분석 툴을 연동하기 위해선 어떤 코드가 필요할까요?
@@ -26,8 +26,8 @@ const FeatureList = [
     ),
   },
   {
-    title: "GA와 Amplitude를 한번에",
-    Svg: require("../../static/img/undraw_docusaurus_react.svg").default,
+    title: 'GA와 Amplitude를 한번에',
+    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
         react-analytics-provider 오픈소스를 통해 Google Analytics, Amplitude와
@@ -85,7 +85,7 @@ const FeatureDescription = styled.p``;
 const FeatureContainer = styled.div`
   ${mq()({
     flex: ['0 0 100%', '0 0 calc(4/12 * 100%)'],
-    maxWidth: ['100%', 'calc(4/12 * 100%)']
+    maxWidth: ['100%', 'calc(4/12 * 100%)'],
   })}
 `;
 
