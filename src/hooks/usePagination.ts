@@ -1,18 +1,30 @@
 import { useEffect, useState } from 'react';
 
 const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
-  const minPage = 1;
-  const maxPage = Math.ceil(source.length / offset);
+  const getResult = () => {
+    const startIdx = (currentPage - 1) * offset;
+    const endIdx = startIdx + offset;
+    setResult(_source.slice(startIdx, endIdx));
+  };
+  const getMaxPage = () => {
+    return Math.max(Math.ceil(_source.length / offset), 1);
+  };
 
+  const minPage = 1;
+  const [_source, setSourceList] = useState(source);
+  const [maxPage, setMaxPage] = useState(getMaxPage());
   const [currentPage, setCurrentPage] = useState(initialPage);
   const [result, setResult] = useState([]);
 
   useEffect(() => {
-    const startIdx = (currentPage - 1) * offset;
-    const endIdx = startIdx + offset;
-
-    setResult(source.slice(startIdx, endIdx));
+    getResult();
   }, [currentPage]);
+
+  useEffect(() => {
+    setMaxPage(getMaxPage());
+    if (currentPage !== 1) setCurrentPage(1);
+    else getResult();
+  }, [_source]);
 
   const onPrevious = () => {
     if (currentPage <= minPage) return;
@@ -23,6 +35,9 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
     if (currentPage >= maxPage) return;
     setCurrentPage(currentPage + 1);
   };
+  const onChangeSource = source => {
+    setSourceList(source);
+  };
 
   return {
     result,
@@ -31,6 +46,7 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
     isFirstPage: currentPage === minPage,
     onPrevious,
     onNext,
+    onChangeSource,
   };
 };
 
