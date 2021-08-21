@@ -1,17 +1,12 @@
 {
-    "extends": "@tsconfig/docusaurus/tsconfig.json",
-    "include": ["src/"],
-    "compilerOptions": {
-        "resolveJsonModule": true,
-        "baseUrl": "./src",
-        "paths": {
-            "*": [
-                "./*"
-            ]
-        },
-        "types": [
-            "node",
-            "@emotion/react/types/css-prop"
-        ]
-    }
+  "extends": "@tsconfig/docusaurus/tsconfig.json",
+  "include": ["src/", "plugins/webpack-configure"],
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["./*"]
+    },
+    "types": ["node", "@emotion/react/types/css-prop"]
+  }
 }

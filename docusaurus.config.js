@@ -3,8 +3,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const path = require('path');
 
 const TITLE = 'Web Analytics Handbook';
-const PLUGINS_WEBPACK_CONFIGURE_PATH =
-  './src/plugins/webpack-configure/index.ts';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -119,7 +117,7 @@ module.exports = {
     ],
   ],
   plugins: [
-    PLUGINS_WEBPACK_CONFIGURE_PATH,
+    path.resolve(__dirname, './plugins/webpack-configure'),
     path.resolve(__dirname, './plugins/route-plugin'),
   ],
 };

@@ -1,7 +1,7 @@
-const Dotenv = require("dotenv-webpack");
+const Dotenv = require('dotenv-webpack');
 
 const DOTENV_DEFAULT_OPTIONS = {
-  path: "./.env",
+  path: './.env',
   safe: true,
   allowEmptyValues: false,
   systemvars: false,
