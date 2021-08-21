@@ -2,10 +2,24 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { FiSearch } from 'react-icons/all';
 
-export default function SearchInput() {
+export default function SearchInput({
+  value,
+  onChange,
+}: {
+  value: string;
+  onChange: (value: string) => void;
+}) {
+  const onChangeKeyword = event => {
+    onChange(event.target.value);
+  };
   return (
     <InputWrapper>
-      <Input placeholder="Search" />
+      <Input
+        type="text"
+        value={value}
+        placeholder="search"
+        onChange={onChangeKeyword}
+      />
       <SearchIcon />
     </InputWrapper>
   );

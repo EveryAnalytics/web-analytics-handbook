@@ -3,11 +3,17 @@ import styled from '@emotion/styled';
 import SearchFilter from './SearchFilter';
 import SearchInput from './SearchInput';
 
-export default function WikiSearch() {
+export default function WikiSearch({
+  value,
+  onChange,
+}: {
+  value: string;
+  onChange: (value: string) => void;
+}) {
   return (
     <SearchWrapper>
-      <SearchFilter />
-      <SearchInput />
+      <SearchFilter value={value} onClick={onChange} />
+      <SearchInput value={value} onChange={onChange} />
     </SearchWrapper>
   );
 }

@@ -1,27 +1,40 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import { EN_LETTERS, KO_LETTERS } from '../../../static/searchLetter';
-
-const SearchFilterList = ({ letters }: { letters: string[] }) => {
+const SearchFilterList = ({
+  letters,
+  onClick,
+}: {
+  letters: string[];
+  onClick: (value: string) => void;
+}) => {
+  const onClickLetter = (letter: string) => {
+    return () => onClick(letter);
+  };
   return (
     <>
       {letters.map(letter => (
         <Li key={letter}>
-          <Button>{letter}</Button>
+          <Button onClick={onClickLetter(letter)}>{letter}</Button>
         </Li>
       ))}
     </>
   );
 };
 
-export default function SearchFilter() {
+export default function SearchFilter({
+  onClick,
+}: {
+  value: string;
+  onClick: (value: string) => void;
+}) {
   return (
     <>
       <Ul>
-        <SearchFilterList letters={KO_LETTERS} />
+        <SearchFilterList letters={KO_LETTERS} onClick={onClick} />
       </Ul>
       <Ul>
-        <SearchFilterList letters={EN_LETTERS} />
+        <SearchFilterList letters={EN_LETTERS} onClick={onClick} />
       </Ul>
     </>
   );
