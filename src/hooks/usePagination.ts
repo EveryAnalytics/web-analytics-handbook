@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 
-const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
+export const usePagination = ({
+  source = [],
+  initialPage = 1,
+  offset = 10,
+}) => {
   const minPage = 1;
   const maxPage = Math.ceil(source.length / offset);
 
@@ -33,5 +37,3 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
     onNext,
   };
 };
-
-export default usePagination;

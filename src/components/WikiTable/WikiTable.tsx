@@ -3,7 +3,7 @@ import React from 'react';
 import WikiTableRow from './WikiTableRow';
 
 import words from '../../../wiki.json';
-import usePagination from '../../hooks/usePagination';
+import { usePagination } from 'hooks';
 
 export default function WikiTable() {
   const { onPrevious, onNext, currentPage, result, isLastPage, isFirstPage } =
