@@ -1,16 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import WikiTableRow from './WikiTableRow';
 
-import words from '../../../wiki.json';
 import usePagination from '../../hooks/usePagination';
 
-export default function WikiTable() {
-  const { onPrevious, onNext, currentPage, result, isLastPage, isFirstPage } =
-    usePagination({
-      source: words,
-      offset: 2,
-    });
+export default function WikiTable({ words = [] }: { words: string[] }) {
+  const {
+    onPrevious,
+    onNext,
+    currentPage,
+    result,
+    isLastPage,
+    isFirstPage,
+    onChangeSource,
+  } = usePagination({
+    source: words,
+    offset: 2,
+  });
+
+  useEffect(() => {
+    onChangeSource(words);
+  }, [words]);
 
   return (
     <>
