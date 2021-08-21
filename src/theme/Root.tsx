@@ -11,7 +11,7 @@ const initializeGA = `
   gtag("config", "G-GZ339RG282");
 `;
 
-function Root({ children }) {
+function Root({ children }: { children: React.ReactNode }) {
   return (
     <>
       <div>
