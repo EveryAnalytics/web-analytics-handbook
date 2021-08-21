@@ -5,7 +5,7 @@ https://everyanalytics.github.io/web-analytics-handbook/
 
 ## Installation
 
-```console
+```bash
 # 의존성 설치
 yarn install
 
@@ -16,7 +16,9 @@ yarn start
 yarn build
 
 # 배포
-GIT_USER=<Your GitHub username> <USE_SSH=true yarn deploy
+GIT_USER=<Your GitHub Username>
+USE_SSH=true
+yarn deploy
 ```
 ## 구성
 
@@ -27,4 +29,4 @@ GIT_USER=<Your GitHub username> <USE_SSH=true yarn deploy
 
 ### ❗️[용어사전](https://everyanalytics.github.io/web-analytics-handbook/wiki) 네이밍 규칙
 - `${한글이름} (${영어이름})` 으로 표기
-- 복수인 경우 `,` 로 구분  `(ex. 측정기준 (Dimension), 측정항목 (Metrics) )`
+- 복수인 경우 `,` 로 구분  `ex. 측정기준 (Dimension), 측정항목 (Metrics)`
