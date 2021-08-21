@@ -37,7 +37,15 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({
+  Svg,
+  title,
+  description,
+}: {
+  Svg: any;
+  title: string;
+  description: React.ReactNode;
+}) {
   return (
     <FeatureContainer>
       <FeatureIconWrapper>
