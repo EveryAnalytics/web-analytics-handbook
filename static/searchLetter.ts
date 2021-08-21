@@ -1,4 +1,4 @@
-export const KO_LETTERS = [
+export const KO_LETTERS: string[] = [
   'ㄱ',
   'ㄴ',
   'ㄷ',
@@ -15,7 +15,7 @@ export const KO_LETTERS = [
   'ㅎ',
 ];
 
-export const EN_LETTERS = [
+export const EN_LETTERS: string[] = [
   'A',
   'B',
   'C',
