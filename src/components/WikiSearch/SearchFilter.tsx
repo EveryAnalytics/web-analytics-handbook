@@ -2,22 +2,26 @@ import React from 'react';
 import styled from '@emotion/styled';
 import { EN_LETTERS, KO_LETTERS } from '../../../static/searchLetter';
 
+const SearchFilterList = ({ letters }: { letters: string[] }) => {
+  return (
+    <>
+      {letters.map(letter => (
+        <Li key={letter}>
+          <Button>{letter}</Button>
+        </Li>
+      ))}
+    </>
+  );
+};
+
 export default function SearchFilter() {
   return (
     <>
       <Ul>
-        {KO_LETTERS.map(word => (
-          <Li key={word}>
-            <Button>{word}</Button>
-          </Li>
-        ))}
+        <SearchFilterList letters={KO_LETTERS} />
       </Ul>
       <Ul>
-        {EN_LETTERS.map(word => (
-          <Li key={word}>
-            <Button>{word}</Button>
-          </Li>
-        ))}
+        <SearchFilterList letters={EN_LETTERS} />
       </Ul>
     </>
   );
