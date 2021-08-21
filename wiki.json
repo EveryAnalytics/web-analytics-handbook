@@ -86,5 +86,17 @@
   {
     "name": "태그 (Tag)",
     "description": "태그를 통해 외부 링크나 GA 이벤트 등을 추적할 수 있다."
+  },
+  {
+    "name": "유료 검색 (Paid search)",
+    "description": "검색광고를 통해 획득한 유입 (광고를 통한 유입도 집계에 포함)"
+  },
+  {
+    "name": "자연 검색 (Organic search)",
+    "description": "광고 외의 유입으로 사용자가 사이트로 직접 유입된 상황 ex) 검색을 통한 유입"
+  },
+  {
+    "name": "기여 (Attribution)",
+    "description": "전환까지 도달한 유입 경로와 광고, 모든 접속 이력 분석을 통해 각각 전환 달성 성과에 대한 기여도를 측정하는 프로세스."
   }
 ]
