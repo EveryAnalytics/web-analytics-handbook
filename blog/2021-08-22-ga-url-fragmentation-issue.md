@@ -2,7 +2,6 @@
 slug: url-fragmentation
 title: GA URL fragmentation Issue
 author: YoungChang Lee
-author_title: 
 author_url: https://github.com/p-iknow
 author_image_url: https://avatars.githubusercontent.com/u/35516239?v=4
 tags: [google-analytics, url-fragmentation]
