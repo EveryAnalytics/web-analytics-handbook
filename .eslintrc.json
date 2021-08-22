@@ -18,8 +18,7 @@
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-var-requires": "off",
     "react/react-in-jsx-scope": "off",
-    "import/no-unresolved": "off",
-    "@typescript-eslint/no-var-requires": "off"
+    "import/no-unresolved": "off"
   },
   "settings": {
     "react": {
