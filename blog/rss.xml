@@ -8,6 +8,13 @@
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
+            <title><![CDATA[GA URL fragmentation Issue]]></title>
+            <link>https://EveryAnalytics.github.io/web-analytics-handbook/blog/url-fragmentation</link>
+            <guid>url-fragmentation</guid>
+            <pubDate>Sun, 22 Aug 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[URL fragmentation 이슈란?]]></description>
+        </item>
+        <item>
             <title><![CDATA[Why Google Analytics?]]></title>
             <link>https://EveryAnalytics.github.io/web-analytics-handbook/blog/why-ga</link>
             <guid>why-ga</guid>
