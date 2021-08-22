@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkweb_analytics_handbook=self.webpackChunkweb_analytics_handbook||[]).push([[121],{649:function(a){a.exports=JSON.parse('{"allTagsPath":"/web-analytics-handbook/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/web-analytics-handbook/blog/tags/facebook"}')}}]);
