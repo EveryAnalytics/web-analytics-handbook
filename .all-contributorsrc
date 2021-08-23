@@ -1,0 +1,34 @@
+{
+  "projectName": "web-analytics-handbook",
+  "projectOwner": "EveryAnalytics",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "hiphapis",
+      "name": "Johan Kim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18629?v=4",
+      "profile": "http://hiphapis.net",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "hy57in",
+      "name": "HyojinKim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60775453?v=4",
+      "profile": "https://velog.io/@gwsyl22",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": false
+}
