@@ -41,6 +41,10 @@ yarn deploy
 - `${한글이름} (${영어이름})` 으로 표기
 - 복수인 경우 `,` 로 구분 `ex. 측정기준 (Dimension), 측정항목 (Metrics)`
 
+## Contributors
+
+<!-- This project exists thanks to all the people who contribute. [[Contributing](https://github.com/EveryAnalytics/react-analytics-provider/blob/main/CONTRIBUTING.md)] -->
+
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
