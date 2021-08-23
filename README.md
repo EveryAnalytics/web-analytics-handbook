@@ -11,7 +11,6 @@ https://everyanalytics.github.io/web-analytics-handbook/
 REACT_APP_GA_TRACKING_ID=트래킹아이디를적으세요.
 ```
 
-
 ## Installation
 
 ```bash
@@ -29,6 +28,7 @@ GIT_USER=<Your GitHub Username>
 USE_SSH=true
 yarn deploy
 ```
+
 ## 구성
 
 1. 📚 핸드북
@@ -37,5 +37,13 @@ yarn deploy
 4. 🙋🏻 용어사전
 
 ### ❗️[용어사전](https://everyanalytics.github.io/web-analytics-handbook/wiki) 네이밍 규칙
+
 - `${한글이름} (${영어이름})` 으로 표기
-- 복수인 경우 `,` 로 구분  `ex. 측정기준 (Dimension), 측정항목 (Metrics)`
+- 복수인 경우 `,` 로 구분 `ex. 측정기준 (Dimension), 측정항목 (Metrics)`
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
