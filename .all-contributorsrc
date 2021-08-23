@@ -1,10 +1,22 @@
 {
   "projectName": "web-analytics-handbook",
   "projectOwner": "EveryAnalytics",
-  "files": ["README.md"],
+  "files": [
+    "README.md"
+  ],
   "imageSize": 100,
   "commit": false,
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "hy57in",
+      "name": "HyojinKim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60775453?v=4",
+      "profile": "https://velog.io/@gwsyl22",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
   "contributorsPerLine": 7,
   "repoType": "github",
   "repoHost": "https://github.com",
