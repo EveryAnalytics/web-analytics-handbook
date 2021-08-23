@@ -43,7 +43,14 @@ yarn deploy
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://velog.io/@gwsyl22"><img src="https://avatars.githubusercontent.com/u/60775453?v=4?s=100" width="100px;" alt=""/><br /><sub><b>HyojinKim</b></sub></a><br /><a href="https://github.com/EveryAnalytics/web-analytics-handbook/commits?author=hy57in" title="Documentation">📖</a></td>
+  </tr>
+</table>
 
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
