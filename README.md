@@ -47,6 +47,7 @@ yarn deploy
 <table>
   <tr>
     <td align="center"><a href="http://hiphapis.net"><img src="https://avatars.githubusercontent.com/u/18629?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Johan Kim</b></sub></a><br /><a href="https://github.com/EveryAnalytics/web-analytics-handbook/pulls?q=is%3Apr+reviewed-by%3Ahiphapis" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/EveryAnalytics/web-analytics-handbook/commits?author=hiphapis" title="Code">💻</a></td>
+    <td align="center"><a href="https://velog.io/@gwsyl22"><img src="https://avatars.githubusercontent.com/u/60775453?v=4?s=100" width="100px;" alt=""/><br /><sub><b>HyojinKim</b></sub></a><br /><a href="https://github.com/EveryAnalytics/web-analytics-handbook/commits?author=hy57in" title="Documentation">📖</a></td>
   </tr>
 </table>
 
