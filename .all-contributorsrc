@@ -25,6 +25,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "uoon-dev",
+      "name": "uoon (philos)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38661266?v=4",
+      "profile": "https://github.com/uoon-dev",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
