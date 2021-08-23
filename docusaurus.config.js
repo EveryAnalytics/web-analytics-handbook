@@ -116,8 +116,5 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
-    path.resolve(__dirname, './plugins/webpack-configure'),
-    path.resolve(__dirname, './plugins/route-plugin'),
-  ],
+  plugins: [path.resolve(__dirname, './plugins/webpack-configure')],
 };

@@ -1,5 +1,4 @@
 import Head from '@docusaurus/Head';
-import { useRouteChangingListner } from 'hooks';
 import React from 'react';
 
 const GA_TRACKING_ID = process.env.REACT_APP_GA_TRACKING_ID;
@@ -33,18 +32,6 @@ const gtagPath = createGtagPath(GA_TRACKING_ID);
 const initializeGA = createInitializeGA(GA_TRACKING_ID);
 
 function Root({ children }: { children: React.ReactNode }) {
-  useRouteChangingListner(() => {
-    const wrapper = document.body.getElementsByClassName('main-wrapper')[0];
-    wrapper.classList.remove('show');
-
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        const wrapper = document.body.getElementsByClassName('main-wrapper')[0];
-        wrapper.classList.add('show');
-      });
-    });
-  });
-
   return (
     <>
       <div>

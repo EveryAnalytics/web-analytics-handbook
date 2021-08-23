@@ -31,13 +31,3 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 table {
   display: table;
 }
-
-.main-wrapper {
-  opacity: 0;
-  -webkit-transition: opacity 0.5s linear;
-  transition: opacity 0.5s linear;
-}
-
-.main-wrapper.show {
-  opacity: 1;
-}
