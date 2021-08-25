@@ -7,18 +7,18 @@ task('default', done => {
     .pipe(
       modifyFile(content => {
         let hasWrongFormatName = false;
-        const json = JSON.parse(content);
+        const wikiData = JSON.parse(content);
 
-        for (let idx = 0; idx < json.length; idx++) {
-          if (isValidName(json[idx].name) === false) {
+        for (let idx = 0; idx < wikiData.length; idx++) {
+          if (isValidName(wikiData[idx].name) === false) {
             hasWrongFormatName = true;
             break;
           }
         }
 
         const sorted = !!hasWrongFormatName
-          ? json
-          : json.sort((a, b) => {
+          ? wikiData
+          : wikiData.sort((a, b) => {
               return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
             });
 
