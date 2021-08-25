@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import { WikiWord } from '../types';
 import KOREAN_CONSONANTS from '../../static/korean-consonants';
 
-const useSearch = ({ source = [] }) => {
+const useSearch = (source: WikiWord[]) => {
   const [result, setResult] = useState(source);
-  const onSearch = keyword => {
+  const onSearch = (keyword: string) => {
     keyword = keyword.trim();
     if (
       keyword.length == 1 &&

@@ -13,9 +13,7 @@ export default function Wiki() {
   const { siteConfig } = useDocusaurusContext();
 
   const [keyword, setKeyword] = useState('');
-  const { result: searchResult, onSearch } = useSearch({
-    source: words,
-  });
+  const { result: searchResult, onSearch } = useSearch(words);
   useEffect(() => {
     onSearch(keyword);
   }, [keyword]);
