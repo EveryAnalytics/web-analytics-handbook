@@ -13,7 +13,7 @@ import words from '../../../wiki.json';
 export default function Wiki() {
   const { siteConfig } = useDocusaurusContext();
 
-  const { keyword, onChangeKeyword } = useKeyword({ initKeyword: '' });
+  const { keyword, onKeywordChange } = useKeyword({ initKeyword: '' });
   const { result: searchResult, onSearch } = useSearch({
     source: words,
   });
@@ -28,7 +28,7 @@ export default function Wiki() {
     >
       <Main className="container">
         <Title>용어사전</Title>
-        <WikiSearch value={keyword} onChange={onChangeKeyword} />
+        <WikiSearch value={keyword} onChange={onKeywordChange} />
         <WikiTable words={searchResult} />
       </Main>
     </Layout>

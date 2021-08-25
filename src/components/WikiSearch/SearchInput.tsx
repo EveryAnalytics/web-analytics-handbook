@@ -9,7 +9,7 @@ export default function SearchInput({
   value: string;
   onChange: (value: string) => void;
 }) {
-  const onChangeKeyword = event => {
+  const onKeywordChange = event => {
     onChange(event.target.value);
   };
   return (
@@ -18,7 +18,7 @@ export default function SearchInput({
         type="text"
         value={value}
         placeholder="search"
-        onChange={onChangeKeyword}
+        onChange={onKeywordChange}
       />
       <SearchIcon />
     </InputWrapper>
