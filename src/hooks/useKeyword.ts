@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useKeyword = ({ initKeyword = '' }) => {
+const useKeyword = (initialValue = '') => {
   const [keyword, setKeyword] = useState(initKeyword);
 
   const onChangeKeyword = value => {
