@@ -5,22 +5,11 @@ import WikiTableRow from './WikiTableRow';
 import usePagination from '../../hooks/usePagination';
 
 export default function WikiTable({ words = [] }: { words: string[] }) {
-  const {
-    onPrevious,
-    onNext,
-    currentPage,
-    result,
-    isLastPage,
-    isFirstPage,
-    onChangeSource,
-  } = usePagination({
-    source: words,
-    offset: 2,
-  });
-
-  useEffect(() => {
-    onChangeSource(words);
-  }, [words]);
+  const { onPrevious, onNext, currentPage, result, isLastPage, isFirstPage } =
+    usePagination({
+      source: words,
+      offset: 2,
+    });
 
   return (
     <>

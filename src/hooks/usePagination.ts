@@ -4,14 +4,13 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
   const getResult = () => {
     const startIdx = (currentPage - 1) * offset;
     const endIdx = startIdx + offset;
-    setResult(_source.slice(startIdx, endIdx));
+    setResult(source.slice(startIdx, endIdx));
   };
   const getMaxPage = () => {
-    return Math.max(Math.ceil(_source.length / offset), 1);
+    return Math.max(Math.ceil(source.length / offset), 1);
   };
 
   const minPage = 1;
-  const [_source, setSourceList] = useState(source);
   const [maxPage, setMaxPage] = useState(getMaxPage());
   const [currentPage, setCurrentPage] = useState(initialPage);
   const [result, setResult] = useState([]);
@@ -24,7 +23,7 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
     setMaxPage(getMaxPage());
     if (currentPage !== 1) setCurrentPage(1);
     else getResult();
-  }, [_source]);
+  }, [source]);
 
   const onPrevious = () => {
     if (currentPage <= minPage) return;
@@ -35,9 +34,6 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
     if (currentPage >= maxPage) return;
     setCurrentPage(currentPage + 1);
   };
-  const onChangeSource = source => {
-    setSourceList(source);
-  };
 
   return {
     result,
@@ -46,7 +42,6 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
     isFirstPage: currentPage === minPage,
     onPrevious,
     onNext,
-    onChangeSource,
   };
 };
 
