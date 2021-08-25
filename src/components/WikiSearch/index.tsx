@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import SearchFilter from './SearchFilter';
+import SearchFilter from './LetterFilter';
 import SearchInput from './SearchInput';
 
 export default function WikiSearch({
