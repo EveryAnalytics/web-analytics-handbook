@@ -12,7 +12,7 @@ export default function WikiSearch({
 }) {
   return (
     <SearchWrapper>
-      <SearchFilter value={value} onClick={onChange} />
+      <SearchFilter value={value} onLetterClick={onChange} />
       <SearchInput value={value} onChange={onChange} />
     </SearchWrapper>
   );
