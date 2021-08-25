@@ -9,7 +9,7 @@ export default function LetterButtonList({
   onClick: (value: string) => void;
 }) {
   return (
-    <>
+    <Ul>
       {letters.map(letter => (
         <Li key={letter}>
           <Button
@@ -21,9 +21,14 @@ export default function LetterButtonList({
           </Button>
         </Li>
       ))}
-    </>
+    </Ul>
   );
 }
+
+const Ul = styled.ul`
+  padding: 0;
+  margin-bottom: 7px;
+`;
 
 const Li = styled.li`
   display: inline-block;
