@@ -11,7 +11,6 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
   };
 
   const minPage = 1;
-  const [maxPage, setMaxPage] = useState(getMaxPage());
   const [currentPage, setCurrentPage] = useState(initialPage);
   const [result, setResult] = useState([]);
 
@@ -20,7 +19,6 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
   }, [currentPage]);
 
   useEffect(() => {
-    setMaxPage(getMaxPage());
     if (currentPage !== 1) setCurrentPage(1);
     else getResult();
   }, [source]);
@@ -31,14 +29,14 @@ const usePagination = ({ source = [], initialPage = 1, offset = 10 }) => {
   };
 
   const onNext = () => {
-    if (currentPage >= maxPage) return;
+    if (currentPage >= getMaxPage()) return;
     setCurrentPage(currentPage + 1);
   };
 
   return {
     result,
     currentPage,
-    isLastPage: currentPage === maxPage,
+    isLastPage: currentPage === getMaxPage(),
     isFirstPage: currentPage === minPage,
     onPrevious,
     onNext,
