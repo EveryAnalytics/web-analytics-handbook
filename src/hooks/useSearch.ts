@@ -16,7 +16,7 @@ const useSearch = (source: WikiWord[]) => {
       setResult(source.filter(item => item.name.includes(keyword)));
     }
   };
-  const onFilter = value => {
+  const onFilter = (value: string) => {
     value = value.trim();
     const isKorean = /[ㄱ-ㅎ]/.test(value);
     const isEnglish = /[A-Za-z]/.test(value);
