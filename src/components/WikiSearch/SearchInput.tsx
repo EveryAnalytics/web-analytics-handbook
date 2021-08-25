@@ -4,13 +4,13 @@ import { FiSearch } from 'react-icons/all';
 
 export default function SearchInput({
   value,
-  onChange,
+  onValueChange,
 }: {
   value: string;
-  onChange: (value: string) => void;
+  onValueChange: (value: string) => void;
 }) {
   const onKeywordChange = event => {
-    onChange(event.target.value);
+    onValueChange(event.target.value);
   };
   return (
     <InputWrapper>

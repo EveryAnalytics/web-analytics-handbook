@@ -5,15 +5,15 @@ import SearchInput from './SearchInput';
 
 export default function WikiSearch({
   value,
-  onChange,
+  onValueChange,
 }: {
   value: string;
-  onChange: (value: string) => void;
+  onValueChange: (value: string) => void;
 }) {
   return (
     <SearchWrapper>
-      <LetterFilter value={value} onLetterClick={onChange} />
-      <SearchInput value={value} onChange={onChange} />
+      <LetterFilter value={value} onLetterClick={onValueChange} />
+      <SearchInput value={value} onValueChange={onValueChange} />
     </SearchWrapper>
   );
 }

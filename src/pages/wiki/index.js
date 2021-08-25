@@ -28,7 +28,7 @@ export default function Wiki() {
     >
       <Main className="container">
         <Title>용어사전</Title>
-        <WikiSearch value={keyword} onChange={onKeywordChange} />
+        <WikiSearch value={keyword} onValueChange={onKeywordChange} />
         <WikiTable words={searchResult} />
       </Main>
     </Layout>
