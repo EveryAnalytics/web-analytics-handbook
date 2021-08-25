@@ -8,14 +8,17 @@ export default function LetterButtonList({
   letters: string[];
   onClick: (value: string) => void;
 }) {
-  const onClickLetter = (letter: string) => {
-    return () => onClick(letter);
-  };
   return (
     <>
       {letters.map(letter => (
         <Li key={letter}>
-          <Button onClick={onClickLetter(letter)}>{letter}</Button>
+          <Button
+            onClick={() => {
+              onClick(letter);
+            }}
+          >
+            {letter}
+          </Button>
         </Li>
       ))}
     </>
