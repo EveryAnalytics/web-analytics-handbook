@@ -23,13 +23,15 @@
 - 📚 개발자에게 필요한 웹 분석 지식
 - 👏🏻 GA와 Amplitude를 한번에
 
-## 1. 실행방법
-1. root 폴더에 `.env` 파일을 추가합니다
+## 1. Getting Started
+
+### 1.1. environment setting
+root 폴더에 `.env` 파일을 추가합니다
 
 ```shell
 REACT_APP_GA_TRACKING_ID=트래킹아이디를적으세요.
 ```
-2. 
+### 1.2. install
 ```shell
 # 의존성 설치
 yarn install
@@ -46,16 +48,15 @@ USE_SSH=true
 yarn deploy
 ```
 
-## 2. 구성
+## 2. Contents
 
-```
-1. 📚 핸드북
-2. 💡 react-anlytics-provider
-3. 👾 블로그
-4. 🙋🏻 용어사전
-```
+### 1. 📚 핸드북
+### 2. 💡 react-anlytics-provider
+### 3. 👾 블로그
+### 4. 🙋🏻 용어사전
 
-## 3. 컨트리뷰터
+
+## 3. Contributors
 
 This project exists thanks to all the people who contribute. [[Contributing](https://github.com/EveryAnalytics/react-analytics-provider/blob/main/CONTRIBUTING.md)]
 
@@ -76,14 +77,15 @@ This project exists thanks to all the people who contribute. [[Contributing](htt
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-## 4. 라이센스
+## 4. License
 
 Licensed under the MIT License, Copyright (c) 2021 EveryAnalytics.
 
 See [LICENSE](https://github.com/EveryAnalytics/web-analytics-handbook/blob/main/LICENSE) for more information.
 
 
-## 5. [용어사전](https://everyanalytics.github.io/web-analytics-handbook/wiki) 네이밍 규칙
+## 5. Rules
+### 5.1. [용어사전](https://everyanalytics.github.io/web-analytics-handbook/wiki) 네이밍 규칙
 ```
 1. ${한글이름} (${영어이름}) 으로 표기
 2. 복수인 경우 , 로 구분 ex. 측정기준 (Dimension), 측정항목 (Metrics)
