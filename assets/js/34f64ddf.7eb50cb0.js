@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb_analytics_handbook=self.webpackChunkweb_analytics_handbook||[]).push([[8162],{5194:function(a){a.exports=JSON.parse('{"allTagsPath":"/web-analytics-handbook/blog/tags","slug":"hello","name":"hello","count":1,"permalink":"/web-analytics-handbook/blog/tags/hello"}')}}]);
