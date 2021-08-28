@@ -44,6 +44,15 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "jiyoon1156",
+      "name": "Jiyoon Hur",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60052127?v=4",
+      "profile": "https://forhjy.medium.com/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
