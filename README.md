@@ -54,6 +54,7 @@ yarn deploy
     <td align="center"><a href="https://velog.io/@gwsyl22"><img src="https://avatars.githubusercontent.com/u/60775453?v=4?s=100" width="100px;" alt=""/><br /><sub><b>HyojinKim</b></sub></a><br /><a href="https://github.com/EveryAnalytics/web-analytics-handbook/commits?author=hy57in" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/josworks27"><img src="https://avatars.githubusercontent.com/u/48130830?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Seongcheol Jo</b></sub></a><br /><a href="https://github.com/EveryAnalytics/web-analytics-handbook/commits?author=josworks27" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/uoon-dev"><img src="https://avatars.githubusercontent.com/u/38661266?v=4?s=100" width="100px;" alt=""/><br /><sub><b>uoon (philos)</b></sub></a><br /><a href="https://github.com/EveryAnalytics/web-analytics-handbook/commits?author=uoon-dev" title="Documentation">📖</a> <a href="https://github.com/EveryAnalytics/web-analytics-handbook/commits?author=uoon-dev" title="Code">💻</a></td>
+    <td align="center"><a href="https://forhjy.medium.com/"><img src="https://avatars.githubusercontent.com/u/60052127?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Jiyoon Hur</b></sub></a><br /><a href="https://github.com/EveryAnalytics/web-analytics-handbook/commits?author=jiyoon1156" title="Documentation">📖</a></td>
   </tr>
 </table>
 
