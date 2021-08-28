@@ -10,6 +10,7 @@ tags: [GoogleAnalytics, GA]
 # 구글 애널리틱스 기본
 
 ## 0. 들어가기에 앞서
+
 본 자료는 구글 애널리틱스 도움말의 초보자용 Google 애널리틱스의 주요 내용을 처음 시작하는 초보자들이 이해하기 쉽게 요약하였습니다.
 
 자세한 내용이 궁금하다면 아래 링크를 참고해 주세요.
@@ -17,6 +18,7 @@ tags: [GoogleAnalytics, GA]
 [👉 원문 링크](https://support.google.com/analytics/answer/6383002?hl=ko)
 
 ## 1. 디지털 애널리틱스 정의
+
 디지털 애널리틱스에 대해 구글의 Avinash Kaushik은 아래와 같은 정의를 내렸습니다.
 > '고객과 잠개고객의 온라인 사용 경험을 지소적으로 개선하여, 온라인과 오프라인에서 원하는 비즈니스 결과를 얻기 위해 자사 및 경쟁사에 대한 정성적, 정량적 데이터를 분석하는 것'
 
@@ -31,6 +33,7 @@ tags: [GoogleAnalytics, GA]
 ## 2. 구글 애널리틱스의 작동 방식
 
 ### 웹 사이트 추적
+
 웹 사이트를 추적하기 위해선 구글 애널리틱스 계정을 만들고, 웹 사이트의 각 페이지에 자바스크립트 추적 코드를 추가해야 합니다. 이를 통해, 사용자가 페이지를 방문할 때마다 추적 코드는 사용자가 해당 페이지와 상호작용한 방법에 대한 익명 정보를 수집합니다.
 
 페이지가 로드될 때 마다 추적 코드는 사용자 활동에 대한 정보를 수집하고 전송합니다. 구글 애널리틱스는 이 활동을 '세션'이라고 하는 기간별로 그룹화합니다.
@@ -38,6 +41,7 @@ tags: [GoogleAnalytics, GA]
 세션은 사용자가 추적 코드가 포함된 페이지로 이동할 때 시작되며, 30분 동안 활동이 없으면 종료됩니다. 세션이 종료된 후 사용자가 다시 페이지로 돌아오면 새로운 세션이 시작됩니다.
 
 ### 처리 및 보고
+
 추적 코드는 데이터를 수집할 때 해당 정보를 패키지로 묶어 구글 애널리틱스에 전송하여 보고서로 처리되도록 합니다. 구글 애널리틱스에서는 데이터를 처리할 때 사용자 기기가 모바일인지 데스크톱인지 또는 사용자가 사용한 브라우저의 유형과 같은 특정 기준에 따라 데이터를 집계하고 구성합니다.
 
 ![GA-Image-1](https://lh3.googleusercontent.com/AIFpRSMWBNNjsxvUKT9_9RVfV90tdE1YnfhltUWS1BYwn1G16ESdYzn3bMLJCwBS_A=w1790-h500)
@@ -45,6 +49,7 @@ tags: [GoogleAnalytics, GA]
 ## 3. 구글 애널리틱스 설정
 
 ### 3.1. 애널리틱스 구현의 기본 요소
+
 모든 구글 애널리틱스 계정은 '조직(Organization)' 아래에 그룹화 할 수 있습니다. 이를 통해, 여러 구글 애널리틱스 계정을 한 그룹으로 관리할 수 있습니다.
 
 ![GA-Image-2](https://lh3.googleusercontent.com/_FW7BZSOnetJdZw_FShlv1rINVBM1_OSKISLi9BIAZKe5C2GxTGdLbXGLq6o2IHV1fyh=w1020-h570)
@@ -54,13 +59,14 @@ tags: [GoogleAnalytics, GA]
 각 계정에는 1개 이상의 '속성'이 있고, 각 '속성'은 추적 코드에 표시되는 고유한 추적 ID(TrackingID)를 사용하여 서로 독립적으로 데이터를 수집할 수 있습니다.
 
 #### 보기(View) 설정
+
 각 계정에 여러 개의 '속성'이 있는 것과 마찬가지로 각 '속성'에는 여러 개의 '보기(View)'가 있을 수 있습니다. 구성 설정에서 필터 기능을 사용하여 각 '보기'의 보고서에 포함될 데이터를 결정할 수 있습니다.
 
 ![GA-Image-3](https://lh3.googleusercontent.com/SZuK8_PHrOYJbp5HIlSLd0_Rr6KgsqUTKpMcxOtxmJvFGMbskTu7-NBTwG9k38Z0nb7N=w1020-h570)
 
 예를 들어 전 세계 구글 스토어의 데이터를 모두 포함하는 하나의 '보기'를 만들 수 있고, 지역별 데이터를 보려는 경우에는 북미, 유럽, 아시아 등 별도의 '보기'를 만들 수도 있습니다.
 
-'보기'에서 '목표'를 설정할 수도 있습니다. '목표'는 웹사이트에서 전환 또는 비즈니스 목표를 추적하는 데 매우 유용한 방법입니다. 
+'보기'에서 '목표'를 설정할 수도 있습니다. '목표'는 웹사이트에서 전환 또는 비즈니스 목표를 추적하는 데 매우 유용한 방법입니다.
 
 **_예시_**
 
@@ -72,6 +78,7 @@ tags: [GoogleAnalytics, GA]
 ![GA-Image-4](https://lh3.googleusercontent.com/cG0LPlrrIXuZFMqH37qgcpHDb3S4ZwpbE3KBMYpzylp9hg8DZj3Z2yiCU-k_ckXG0IxO=w1020-h570)
 
 #### 사용자 권한
+
 '계정', '속성', '보기' 레벨에서 다른 사용자에게 권한을 지정할 수 있습니다. 각 레벨에서는 그 레벨의 상위 권한을 상속받습니다.
 
 **_예시_**
@@ -114,7 +121,7 @@ tags: [GoogleAnalytics, GA]
 
 #### 추적 코드 설정
 
-속성 설정을 마치면 자바스크립트 추적 코드가 표시됩니다. 이 코드를 웹사이트의 <head> 태그 가장 위에 추적 코드를 넣습니다.
+속성 설정을 마치면 자바스크립트 추적 코드가 표시됩니다. 이 코드를 웹사이트의 head 태그 가장 위에 추적 코드를 넣습니다.
 
 ![GA-Image-9](https://storage.googleapis.com/academy-prod/evolve/academy/course06/ko/unit1/lesson3/course/en/assets/5d4b27febe65813803ed171f/large.png)
 
@@ -134,4 +141,4 @@ tags: [GoogleAnalytics, GA]
 
 ## 참고자료
 
-- [https://analytics.google.com/analytics/academy](https://analytics.google.com/analytics/academy/)
+* [https://analytics.google.com/analytics/academy](https://analytics.google.com/analytics/academy/)
