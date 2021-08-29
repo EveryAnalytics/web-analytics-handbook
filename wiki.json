@@ -110,5 +110,25 @@
   {
     "name": "소스/매체 (Source/Medium)",
     "description": "소스와 매체를 결합한 측정기준 (e.g. google/organic)"
+  },
+  {
+    "name": "동일 집단 (Same group)",
+    "description": "애널리틱스 측정기준에 따라 보고서에서 지정된 공통의 특징을 지닌 사용자 그룹"
+  },
+  {
+    "name": "신규방문자 (New visitor)",
+    "description": "쿠키값을 기준으로 웹사이트에 처음 방문한 방문자"
+  },
+  {
+    "name": "종료율 (End Rate)",
+    "description": "특정 페이지에서 홈페이지를 종료한 비율"
+  },
+  {
+    "name": "페이지뷰 (Page View)",
+    "description": "고객이 방문한 웹페이지의 수"
+  },
+  {
+    "name": "순 페이지뷰 수 (Number of Pure Page Views)",
+    "description": "동일한 세션에서 동일한 페이지뷰를 조회한 중복값을 제거한 페이지뷰 수"
   }
 ]
