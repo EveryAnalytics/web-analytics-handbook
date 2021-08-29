@@ -17,49 +17,27 @@
   </a>
 </p>
 
+## 1. Introduce
+
 > 개발자를 위한 웹 사용자 데이터 분석 핸드북
 
-- 🤔 DAU, GA... 먹는건가요?
-- 📚 개발자에게 필요한 웹 분석 지식
-- 👏🏻 GA와 Amplitude를 한번에
+- **DAU, GA... 먹는건가요?🤔**
+  사용자 데이터 분석(Daily Active User, 전환율 측정 등)은 모던 웹 프로젝트에서 필수적인 부분이지만, 어디서부터 시작해야 할지 막막해하는 개발자들이 많습니다. 이 핸드북을 통해 기초적인 분석에 대한 개념을 잡습니다.
+- **개발자에게 필요한 웹 분석 지식📚**
+  여러분의 프로젝트에 웹 분석 툴을 연동하기 위해선 어떤 코드가 필요할까요?
 
-## 1. Contents
+- **GA와 Amplitude를 한번에🐰🐰**
+  react-analytics-provider 오픈소스를 통해 Google Analytics, Amplitude와 같은 분석 툴 도입의 진입 장벽을 낮출 수 있습니다.
 
-### 1.1. 📚 핸드북
+## 2. Contents
 
-### 1.2. 💡 react-anlytics-provider
+- **📚 핸드북** : 사용자 데이터 분석에 대한 전반적인 개념을 잡습니다.
 
-### 1.3. 👾 블로그
+- **💡 react-anlytics-provider** : 프로젝트에 웹 분석 툴을 연동할 수 있도록 도와주는 라이브러리입니다.
 
-### 1.4. 🙋🏻 용어사전
+- **👾 블로그** : 사용자 데이터 분석에 대한 자유로운 포스트를 모아놓은 블로그입니다. 라이브러리를 개발하며 생긴 트러블슈팅이나 일기 등 개발에 관한 이야기도 있어요!
 
-## 2. Getting Started
-
-### 2.1. environment setting
-
-root 폴더에 `.env` 파일을 추가합니다
-
-```shell
-REACT_APP_GA_TRACKING_ID=트래킹아이디를적으세요.
-```
-
-### 2.2. install
-
-```shell
-# 의존성 설치
-yarn install
-
-# 로컬 서버 띄우기
-yarn start
-
-# 빌드
-yarn build
-
-# 배포
-GIT_USER=<Your GitHub Username>
-USE_SSH=true
-yarn deploy
-```
+- **🙋🏻 용어사전** : 사용자 데이터 분석에 대한 용어를 한데 모아놓은 용어사전입니다.
 
 ## 3. Contributors
 
@@ -87,12 +65,3 @@ This project exists thanks to all the people who contribute. [[Contributing](htt
 Licensed under the MIT License, Copyright (c) 2021 EveryAnalytics.
 
 See [LICENSE](https://github.com/EveryAnalytics/web-analytics-handbook/blob/main/LICENSE) for more information.
-
-## 5. Rules
-
-### 5.1. [용어사전](https://everyanalytics.github.io/web-analytics-handbook/wiki) 네이밍 규칙
-
-```
-1. ${한글이름} (${영어이름}) 으로 표기
-2. 복수인 경우 , 로 구분 ex. 측정기준 (Dimension), 측정항목 (Metrics)
-```
