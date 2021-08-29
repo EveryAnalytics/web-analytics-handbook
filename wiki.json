@@ -98,5 +98,17 @@
   {
     "name": "기여 (Attribution)",
     "description": "전환까지 도달한 유입 경로와 광고, 모든 접속 이력 분석을 통해 각각 전환 달성 성과에 대한 기여도를 측정하는 프로세스."
+  },
+  {
+    "name": "소스 (Source)",
+    "description": "검색 엔진으로 데이터 트래픽이 유입된 위치 (eg. google)"
+  },
+  {
+    "name": "매체 (Medium)",
+    "description": "자연 검색으로 유입되었는지 유료 검색으로 유입되었는지 등을 표시하는 일반적인 소스의 카테고리 (eg. organic)"
+  },
+  {
+    "name": "소스/매체 (Source/Medium)",
+    "description": "소스와 매체를 결합한 측정기준 (eg. google/organic)"
   }
 ]
