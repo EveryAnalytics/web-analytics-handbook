@@ -2,6 +2,11 @@ import { useState } from 'react';
 import { WikiWord } from '../types';
 import KOREAN_CONSONANTS from '../../static/korean-consonants';
 
+const UNICODE_FIRST_FOREAN = 44032;
+const NUMBER_OF_KOREAN_LETTERS = 11172;
+const NUMBER_OF_KOREAN_NUCLEUS = 21;
+const NUMBER_OF_KOREAN_CODA = 28;
+
 const ALPHABET_REGEX = new RegExp(/^[A-Za-z]$/);
 const KOREAN_CONSONANTS_REGEX = new RegExp(/^[ㄱ-ㅎ]$/);
 
@@ -38,11 +43,17 @@ const useSearch = (source: WikiWord[]) => {
       case 'KOREAN':
         setResult(
           source.filter(item => {
-            const code = item.name.trim().charCodeAt(0) - 44032;
-            if (code <= -1 && code >= 11172) {
+            const code = item.name.trim().charCodeAt(0) - UNICODE_FIRST_FOREAN;
+            if (code <= -1 && code >= NUMBER_OF_KOREAN_LETTERS) {
               return false;
             }
-            return KOREAN_CONSONANTS[Math.floor(code / 588)] === value;
+            return (
+              KOREAN_CONSONANTS[
+                Math.floor(
+                  code / (NUMBER_OF_KOREAN_NUCLEUS * NUMBER_OF_KOREAN_CODA),
+                )
+              ] === value
+            );
           }),
         );
         break;
