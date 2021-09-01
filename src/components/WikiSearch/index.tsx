@@ -1,13 +1,19 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import SearchFilter from './SearchFilter';
+import LetterFilter from './LetterFilter';
 import SearchInput from './SearchInput';
 
-export default function WikiSearch() {
+export default function WikiSearch({
+  value,
+  onValueChange,
+}: {
+  value: string;
+  onValueChange: (value: string) => void;
+}) {
   return (
     <SearchWrapper>
-      <SearchFilter />
-      <SearchInput />
+      <LetterFilter value={value} onLetterClick={onValueChange} />
+      <SearchInput value={value} onValueChange={onValueChange} />
     </SearchWrapper>
   );
 }
