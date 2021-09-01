@@ -13,12 +13,13 @@ const KOREAN_CONSONANTS_REGEX = new RegExp(/^[ㄱ-ㅎ]$/);
 const isLetterFilterValue = (value: string): boolean => {
   return ALPHABET_REGEX.test(value) || KOREAN_CONSONANTS_REGEX.test(value);
 };
-const getLetterLanguage = (value: string): string => {
-  return KOREAN_CONSONANTS_REGEX.test(value)
-    ? 'KOREAN'
-    : ALPHABET_REGEX.test(value)
-    ? 'ENGLISH'
-    : '';
+const getLetterLanguage = (value: string): 'KOREAN' | 'ENGLISH' | null => {
+  if (KOREAN_CONSONANTS_REGEX.test(value)) {
+    return 'KOREAN';
+  } else if (ALPHABET_REGEX.test(value)) {
+    return 'ENGLISH';
+  }
+  return null;
 };
 
 const useSearch = (source: WikiWord[]) => {
