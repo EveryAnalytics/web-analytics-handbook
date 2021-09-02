@@ -1,6 +1,7 @@
 const { src, task, series, dest } = require('gulp');
 const log = require('fancy-log');
 const modifyFile = require('gulp-modify-file');
+const prettier = require('gulp-prettier');
 
 task('check-wiki.json', done => {
   src('./wiki.json')
@@ -22,9 +23,10 @@ task('check-wiki.json', done => {
               return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
             });
 
-        return JSON.stringify(sorted, null, '\t');
+        return JSON.stringify(sorted);
       }),
     )
+    .pipe(prettier())
     .pipe(dest('./'));
   done();
 });
