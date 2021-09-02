@@ -1,3 +1,4 @@
+const { task, src, series, dest } = require('gulp');
 const log = require('fancy-log');
 const modifyFile = require('gulp-modify-file');
 const prettier = require('gulp-prettier');
