@@ -2,7 +2,7 @@ const { src, task, series, dest } = require('gulp');
 const log = require('fancy-log');
 const modifyFile = require('gulp-modify-file');
 
-task('default', done => {
+task('check-wiki.json', done => {
   src('./wiki.json')
     .pipe(
       modifyFile(content => {
@@ -50,4 +50,4 @@ function isValidName(str) {
   return true;
 }
 
-exports.default = series('default');
+exports.default = series('check-wiki.json');
