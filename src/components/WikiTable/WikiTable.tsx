@@ -1,25 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect, useRef } from 'react';
+import { WikiWord } from 'types';
 
 import WikiTableRow from './WikiTableRow';
 
-import usePagination from '../../hooks/usePagination';
-
-export default function WikiTable({ words = [] }: { words: string[] }) {
-  const { onPrevious, onNext, currentPage, result, isLastPage, isFirstPage } =
-    usePagination({
-      source: words,
-      offset: 2,
-    });
-
+export default function WikiTable({ words = [] }: { words: WikiWord[] }) {
+  const getIsLast = (index): boolean => {
+    return words.length - 1 == index;
+  };
   return (
     <>
-      <span>{currentPage}</span>
-      <button onClick={onPrevious} disabled={isFirstPage}>
-        Previous
-      </button>
-      <button onClick={onNext} disabled={isLastPage}>
-        Next
-      </button>
       <table width="100%" summary="Web Analytics Handbook 용어사전">
         <thead>
           <tr style={{ borderBottom: 'none' }}>
@@ -28,8 +17,8 @@ export default function WikiTable({ words = [] }: { words: string[] }) {
           </tr>
         </thead>
         <tbody>
-          {result.map(word => (
-            <WikiTableRow key={word.name} {...word} />
+          {words.map((word, index) => (
+            <WikiTableRow key={word.name} {...word} last={getIsLast(index)} />
           ))}
         </tbody>
       </table>
