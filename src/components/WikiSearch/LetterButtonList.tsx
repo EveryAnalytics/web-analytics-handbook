@@ -45,6 +45,7 @@ const Button = styled.button`
   border: 1px solid var(--ifm-color-gray-300);
   border-radius: 4px;
   background-color: #ffffff;
+  color: #000000;
   cursor: pointer;
 
   &:hover {
