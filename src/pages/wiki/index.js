@@ -8,12 +8,15 @@ import WikiSearch from '../../components/WikiSearch';
 import useSearch from '../../hooks/useSearch';
 
 import words from '../../../wiki.json';
+import WikiDetail from '../../components/WikiDetail';
 
 export default function Wiki() {
   const { siteConfig } = useDocusaurusContext();
 
   const [keyword, setKeyword] = useState('');
+  const [selectedWord, setSelectedWord] = useState(null);
   const { result: searchResult, onSearch } = useSearch(words);
+
   useEffect(() => {
     onSearch(keyword);
   }, [keyword]);
@@ -26,7 +29,11 @@ export default function Wiki() {
       <Main className="container">
         <Title>용어사전</Title>
         <WikiSearch value={keyword} onValueChange={setKeyword} />
-        <WikiTable words={searchResult} />
+        <WikiTable words={searchResult} setSelectedWord={setSelectedWord} />
+        <WikiDetail
+          selectedWord={selectedWord}
+          onClose={() => setSelectedWord(null)}
+        />
       </Main>
     </Layout>
   );
