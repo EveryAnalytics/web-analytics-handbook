@@ -1,9 +1,6 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-const PLUGINS_WEBPACK_CONFIGURE_PATH =
-  './src/plugins/webpack-configure/index.ts';
-
 const TITLE = 'Web Analytics Handbook';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -106,6 +103,8 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -116,8 +115,13 @@ module.exports = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          trailingSlash: false,
+        },
       },
     ],
   ],
-  plugins: [PLUGINS_WEBPACK_CONFIGURE_PATH],
+  plugins: [require.resolve('./src/plugins/webpack-configure/index.ts')],
 };
