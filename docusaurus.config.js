@@ -1,5 +1,6 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
 const TITLE = 'Web Analytics Handbook';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
@@ -90,6 +91,7 @@ module.exports = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+      additionalLanguages: ['dart'],
     },
   },
   presets: [
