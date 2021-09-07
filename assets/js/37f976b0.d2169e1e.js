@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkweb_analytics_handbook=self.webpackChunkweb_analytics_handbook||[]).push([[4294],{416:function(a){a.exports=JSON.parse('{"allTagsPath":"/web-analytics-handbook/blog/tags","slug":"google-analytics","name":"google-analytics","count":2,"permalink":"/web-analytics-handbook/blog/tags/google-analytics"}')}}]);

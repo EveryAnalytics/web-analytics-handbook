@@ -2,11 +2,18 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://EveryAnalytics.github.io/web-analytics-handbook/blog</id>
     <title>Web Analytics Handbook Blog</title>
-    <updated>2021-08-22T00:00:00.000Z</updated>
+    <updated>2021-09-04T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://EveryAnalytics.github.io/web-analytics-handbook/blog"/>
     <subtitle>Web Analytics Handbook Blog</subtitle>
     <icon>https://EveryAnalytics.github.io/web-analytics-handbook/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Flutter 플러그인으로 ecommerce 이벤트 보낼 때 생긴 일]]></title>
+        <id>Flutter 플러그인으로 ecommerce 이벤트 보낼 때 생긴 일</id>
+        <link href="https://EveryAnalytics.github.io/web-analytics-handbook/blog/2021/09/04/flutter-fb-analytics-plugin"/>
+        <updated>2021-09-04T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[이 글은 Flutter 플러그인으로 ecommerce 이벤트를 보내는 방법에 대한 내용이 아닙니다. 제가 겪은 이슈를 공유하는 차원의 글이며 세부적인 구현은 들어있지 않으므로 감안하고 봐주시면 감사하겠습니다🙋🏻‍♀️]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[GA URL fragmentation Issue]]></title>
         <id>url-fragmentation</id>

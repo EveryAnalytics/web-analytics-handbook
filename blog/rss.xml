@@ -4,9 +4,16 @@
         <title>Web Analytics Handbook Blog</title>
         <link>https://EveryAnalytics.github.io/web-analytics-handbook/blog</link>
         <description>Web Analytics Handbook Blog</description>
-        <lastBuildDate>Sun, 22 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 04 Sep 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Flutter 플러그인으로 ecommerce 이벤트 보낼 때 생긴 일]]></title>
+            <link>https://EveryAnalytics.github.io/web-analytics-handbook/blog/2021/09/04/flutter-fb-analytics-plugin</link>
+            <guid>Flutter 플러그인으로 ecommerce 이벤트 보낼 때 생긴 일</guid>
+            <pubDate>Sat, 04 Sep 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[이 글은 Flutter 플러그인으로 ecommerce 이벤트를 보내는 방법에 대한 내용이 아닙니다. 제가 겪은 이슈를 공유하는 차원의 글이며 세부적인 구현은 들어있지 않으므로 감안하고 봐주시면 감사하겠습니다🙋🏻‍♀️]]></description>
+        </item>
         <item>
             <title><![CDATA[GA URL fragmentation Issue]]></title>
             <link>https://EveryAnalytics.github.io/web-analytics-handbook/blog/url-fragmentation</link>

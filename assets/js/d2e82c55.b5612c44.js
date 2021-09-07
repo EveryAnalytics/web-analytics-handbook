@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkweb_analytics_handbook=self.webpackChunkweb_analytics_handbook||[]).push([[6937],{6769:function(a){a.exports=JSON.parse('{"allTagsPath":"/web-analytics-handbook/blog/tags","slug":"flutter","name":"flutter","count":1,"permalink":"/web-analytics-handbook/blog/tags/flutter"}')}}]);
