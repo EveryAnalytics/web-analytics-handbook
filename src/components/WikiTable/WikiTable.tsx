@@ -1,15 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 
 import WikiTableRow from './WikiTableRow';
 
 import usePagination from '../../hooks/usePagination';
 
-export default function WikiTable({ words = [] }: { words: string[] }) {
+export default function WikiTable({
+  words = [],
+  setSelectedWord,
+}: {
+  words: string[];
+  setSelectedWord: Dispatch<SetStateAction<boolean>>;
+}) {
   const { onPrevious, onNext, currentPage, result, isLastPage, isFirstPage } =
     usePagination({
       source: words,
       offset: 2,
     });
+
+  const handleRowClick = word => {
+    setSelectedWord(word);
+  };
 
   return (
     <>
@@ -29,7 +39,11 @@ export default function WikiTable({ words = [] }: { words: string[] }) {
         </thead>
         <tbody>
           {result.map(word => (
-            <WikiTableRow key={word.name} {...word} />
+            <WikiTableRow
+              handleRowClick={() => handleRowClick(word)}
+              key={word.name}
+              {...word}
+            />
           ))}
         </tbody>
       </table>
