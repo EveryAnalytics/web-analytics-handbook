@@ -2,11 +2,16 @@ import React, { useCallback, useEffect, useRef } from 'react';
 import { WikiWord } from 'types';
 
 import WikiTableRow from './WikiTableRow';
+import useInfiniteScroll from '../../hooks/useInfiniteScroll';
 
 export default function WikiTable({ words = [] }: { words: WikiWord[] }) {
-  const getIsLast = (index): boolean => {
-    return words.length - 1 == index;
+  const { result, onNext } = useInfiniteScroll({
+    source: words,
+  });
+  const getLastRow = (index): boolean => {
+    return result.length - 1 == index;
   };
+
   return (
     <>
       <table width="100%" summary="Web Analytics Handbook 용어사전">
@@ -17,8 +22,13 @@ export default function WikiTable({ words = [] }: { words: WikiWord[] }) {
           </tr>
         </thead>
         <tbody>
-          {words.map((word, index) => (
-            <WikiTableRow key={word.name} {...word} last={getIsLast(index)} />
+          {result.map((word, index) => (
+            <WikiTableRow
+              key={word.name}
+              {...word}
+              last={getLastRow(index)}
+              onNext={onNext}
+            />
           ))}
         </tbody>
       </table>
