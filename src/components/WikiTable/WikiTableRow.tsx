@@ -13,11 +13,12 @@ export default function WikiTableRow({
   last,
   onNext,
 }: wikiTableRowProps) {
-  const ref = useRef<HTMLFormElement | null>(null);
-  const entry = useIntersectionObserver(ref, { freezeOnceVisible: true });
+  const { ref, entry } = useIntersectionObserver({ freezeOnceVisible: true });
+
   useEffect(() => {
     if (entry?.isIntersecting) onNext();
   }, [entry]);
+
   const content = (
     <>
       <td>{name}</td>
