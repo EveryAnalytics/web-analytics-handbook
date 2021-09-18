@@ -16,7 +16,7 @@ export default function WikiTableRow({
   const ref = useRef<HTMLFormElement | null>(null);
   const entry = useIntersectionObserver(ref, { freezeOnceVisible: true });
   useEffect(() => {
-    if (entry?.intersectionRatio) onNext();
+    if (entry?.isIntersecting) onNext();
   }, [entry]);
   const content = (
     <>
