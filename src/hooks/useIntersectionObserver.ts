@@ -1,5 +1,5 @@
 import { RefObject, useEffect, useRef, useState } from 'react';
-
+import 'intersection-observer';
 interface Args extends IntersectionObserverInit {
   freezeOnceVisible?: boolean;
 }
