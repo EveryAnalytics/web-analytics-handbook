@@ -2,6 +2,7 @@ import { RefObject, useEffect, useRef, useState } from 'react';
 import 'intersection-observer';
 interface Args extends IntersectionObserverInit {
   freezeOnceVisible?: boolean;
+  delay?: number;
 }
 
 function useIntersectionObserver({
@@ -9,6 +10,7 @@ function useIntersectionObserver({
   root = null,
   rootMargin = '0%',
   freezeOnceVisible = false,
+  delay = 0,
 }: Args): {
   ref: RefObject<Element> | null;
   entry: IntersectionObserverEntry | undefined;
@@ -18,7 +20,9 @@ function useIntersectionObserver({
 
   const frozen = entry?.isIntersecting && freezeOnceVisible;
   const updateEntry = ([entry]: IntersectionObserverEntry[]): void => {
-    setEntry(entry);
+    setTimeout(() => {
+      setEntry(entry);
+    }, delay);
   };
 
   useEffect(() => {
