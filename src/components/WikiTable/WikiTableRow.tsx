@@ -1,5 +1,5 @@
 import useIntersectionObserver from 'hooks/useIntersectionObserver';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
 type wikiTableRowProps = {
   description: string;
