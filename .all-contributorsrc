@@ -25,6 +25,53 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "josworks27",
+      "name": "Seongcheol Jo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48130830?v=4",
+      "profile": "https://github.com/josworks27",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "uoon-dev",
+      "name": "uoon (philos)",
+      "avatar_url": "https://avatars.githubusercontent.com/u/38661266?v=4",
+      "profile": "https://github.com/uoon-dev",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "jiyoon1156",
+      "name": "Jiyoon Hur",
+      "avatar_url": "https://avatars.githubusercontent.com/u/60052127?v=4",
+      "profile": "https://forhjy.medium.com/",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "greatSumini",
+      "name": "Choi Sumin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48555121?v=4",
+      "profile": "https://sumini.dev",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "yeppin",
+      "name": "Yebin Seo",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81066071?v=4",
+      "profile": "https://github.com/yeppin",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

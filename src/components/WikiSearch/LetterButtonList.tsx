@@ -1,29 +1,27 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { EN_LETTERS, KO_LETTERS } from '../../../static/searchLetter';
 
-const SearchFilterList = ({ letters }: { letters: string[] }) => {
+export default function LetterButtonList({
+  letters,
+  onClick,
+}: {
+  letters: string[];
+  onClick: (value: string) => void;
+}) {
   return (
-    <>
+    <Ul>
       {letters.map(letter => (
         <Li key={letter}>
-          <Button>{letter}</Button>
+          <Button
+            onClick={() => {
+              onClick(letter);
+            }}
+          >
+            {letter}
+          </Button>
         </Li>
       ))}
-    </>
-  );
-};
-
-export default function SearchFilter() {
-  return (
-    <>
-      <Ul>
-        <SearchFilterList letters={KO_LETTERS} />
-      </Ul>
-      <Ul>
-        <SearchFilterList letters={EN_LETTERS} />
-      </Ul>
-    </>
+    </Ul>
   );
 }
 
@@ -47,6 +45,7 @@ const Button = styled.button`
   border: 1px solid var(--ifm-color-gray-300);
   border-radius: 4px;
   background-color: #ffffff;
+  color: #000000;
   cursor: pointer;
 
   &:hover {
