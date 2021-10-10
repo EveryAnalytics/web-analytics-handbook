@@ -4,3 +4,4 @@ build
 
 # Ignore files
 *.html
+*.md
