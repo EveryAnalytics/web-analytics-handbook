@@ -66,3 +66,9 @@
   반면에 **gtag.js 태그**는 데이터 전송에 트래커를 사용하지 않습니다. 대신, ‘config’ command로 설정한 추적 ID(tracking ID)로 확인할 수 있는 구글 애널리틱스 속성으로 데이터를 전송합니다.
 
 - **analytics.js**와 **gtag.js**는 서로 다른 추적 파라미터를 사용합니다. 페이지뷰나 이벤트 설정 데이터를 전송하는 문법이 다릅니다.
+
+## 3. 참고
+
+[구글 애널리틱스 고객센터](https://support.google.com/analytics#topic=9143232)
+[ga와 gtag의 차이점](https://y-chyachya.tistory.com/47)
+Do it! 사용자의 행동을 분석해 성과를 높이는 구글 애널리틱스

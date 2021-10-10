@@ -35,5 +35,4 @@
 ## 4. 참고
 
 [구글 애널리틱스 고객센터](https://support.google.com/analytics#topic=9143232)
-
-Do it! 구글 애널리틱스 입문
+Do it! 사용자의 행동을 분석해 성과를 높이는 구글 애널리틱스
