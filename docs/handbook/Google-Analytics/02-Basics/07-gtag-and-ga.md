@@ -1,6 +1,6 @@
 # gtag와 ga 비교
 
-구글이 글로벌 사이트 태그(Global Site Tag, gtag.js)라는 새로운 유형의 태그를 도입하면서 페이지뷰 전송, 맞춤 이벤트 설정 등 데이터 전송 방법이 기존 유니버설 애널리틱스 태그(Univiersal Analytics, analytics.js) 방식과 달라졌습니다.
+구글이 글로벌 사이트 태그(Global Site Tag, 이하 gtag.js)라는 새로운 유형의 태그를 도입하면서 페이지뷰 전송, 맞춤 이벤트 설정 등 데이터 전송 방법이 기존 유니버설 애널리틱스 태그(Univiersal Analytics, 이하 analytics.js) 방식과 달라졌습니다.
 
 ## 1. 글로벌 사이트 태그(Global Site Tag)
 
