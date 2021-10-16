@@ -18,7 +18,7 @@ function useIntersectionObserver({
   const ref = useRef<HTMLFormElement | null>(null);
   const [entry, setEntry] = useState<IntersectionObserverEntry>();
 
-  const frozen = entry?.isIntersecting && freezeOnceVisible;
+  const frozen: boolean = entry?.isIntersecting && freezeOnceVisible;
   const updateEntry = ([entry]: IntersectionObserverEntry[]): void => {
     setTimeout(() => {
       setEntry(entry);
