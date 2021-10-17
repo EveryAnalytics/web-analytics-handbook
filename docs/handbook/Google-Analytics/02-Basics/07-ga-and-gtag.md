@@ -12,12 +12,14 @@
 
 - ### 코드
 
+```javascript
   <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
   <script>
       window.dataLayer = window.dataLayer || [];function gtag()
       {dataLayer.push(arguments)};gtag(‘js’, new Date());
       gtag(‘config’, ‘GA_TRACKING_ID’);
   </script>
+```
 
 - ### 사용 방법
 
@@ -30,6 +32,7 @@
 
   반면에 **gtag.js에서는 액션만이 필수 항목에 해당**합니다.
 
+  ```javascript
   <!-- analytics.js에서의 설정 -->
 
   <script>
@@ -41,15 +44,18 @@
   <script>
       gtag(‘event’, ‘login’);
   </script>
+  ```
 
   gtag.js 방식에서는 액션 값이 필수인 한편 아래와 같이 이벤트 카테고리 및 라벨 값을 직접 지정할 수 있습니다.
 
+   ```javascript
   <script>
       gtag(‘event’, ‘event_name’, {
       ‘event_category’: categoryName,
       ‘event_label’: labelName
   	});
   </script>
+   ```
 
 ​ 위에서 **event_name이 액션 값에 해당**합니다.
 
