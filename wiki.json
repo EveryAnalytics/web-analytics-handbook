@@ -130,5 +130,45 @@
   {
     "name": "순 페이지뷰 수 (Number of Pure Page Views)",
     "description": "동일한 세션에서 동일한 페이지뷰를 조회한 중복값을 제거한 페이지뷰 수"
+  },
+  {
+    "name": "구글 서치 콘솔 (Google Search Console)",
+    "description": "구글의 웹 마스터 도구로, SEO 관리 기능을 제공하는 서비스"
+  },
+  {
+    "name": "구글 애즈 (Google Ads)",
+    "description": "웹 페이지 내에 광고를 게제할 수 있도록 하는 구글의 광고 시스템"
+  },
+  {
+    "name": "텍스트 광고 (Text Ads)",
+    "description": "사용자의 검색어와 광고주가 입찰한 키워드의 일치 결과에 따라 게제되는 광고 형태"
+  },
+  {
+    "name": "디스플레이 광고 (Display Ads)",
+    "description": "텍스트, 이미지, 애니메이션 또는 영상으로 구성된 광고 형태"
+  },
+  {
+    "name": "CPC (Cost Per Click)",
+    "description": "유료 검색 캠페인을 통해 유입된 트래픽"
+  },
+  {
+    "name": "글로벌 사이트 태그 (Global Site Tag)",
+    "description": "구글의 사이트 측정, 전환 추적 및 리마케팅을 위한 웹 태깅 라이브러리"
+  },
+  {
+    "name": "오가닉 (Organic)",
+    "description": "무료 검색을 통해 유입된 트래픽"
+  },
+  {
+    "name": "전환 (Conversion)",
+    "description": "사용자가 웹 사이트 내에서 목표 행위를 완료한 경우"
+  },
+  {
+    "name": "히트 (Hit)",
+    "description": "사용자에 대한 유용한 정보를 담은 URL 문자열"
+  },
+  {
+    "name": "GA4",
+    "description": "2020년에 출시된 GA의 새로운 버전"
   }
 ]
