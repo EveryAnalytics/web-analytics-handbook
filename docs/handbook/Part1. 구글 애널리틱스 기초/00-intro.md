@@ -1,10 +1,22 @@
 ---
-slug: intro
-title: Intro
-author: Yurim Jin
-author_url: https://github.com/milooy
-author_image_url: https://avatars.githubusercontent.com/u/3839771?v=4
 tags: [GoogleAnalytics, GA]
+sidebar_collapsed: false
 ---
 
-# Intro
+# 들어가며
+
+> 본 자료는 개발자가 구글 애널리틱스를 웹사이트에 연동하는 과정을 설명한 글입니다. 초보자를 대상으로 하며, 구글애널리틱스 최신 버전(GA4)를 사용합니다.
+
+## Part.1에서 익힐 수 있는 개념
+
+- 왜 구글 애널리틱스를 사용해야 할까요?   
+- 어떤 데이터를 볼 수 있나요?
+- 버전이 2개가 있던데, GA4랑 UA의 차이가 궁금해요!
+- GA적용을 위해 사용할 수 있는 라이브러리 소개 (UA / GA4)
+- GA 사용을 위한 계정 생성 방법
+- GA 사용을 위한 스크립트 삽입
+- GA가 웹 프로젝트에 정상적으로 적용되었는지 확인하는 방법
+- GA 데이터가 프론트에 적용되고, 데이터가 수집되는 원리
+- GA로 페이지뷰 데이터 수집해보기
+- GA로 이벤트 호출 데이터 수집해보기
+- 개발자도 상식적으로 볼 줄 알아야 하는 GA의 핵심 지표 (2~3가지 정도)
