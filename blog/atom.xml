@@ -15,18 +15,18 @@
         <summary type="html"><![CDATA[이 글은 Flutter 플러그인으로 ecommerce 이벤트를 보내는 방법에 대한 내용이 아닙니다. 제가 겪은 이슈를 공유하는 차원의 글이며 세부적인 구현은 들어있지 않으므로 감안하고 봐주시면 감사하겠습니다🙋🏻‍♀️]]></summary>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Why Google Analytics?]]></title>
-        <id>why-ga</id>
-        <link href="https://EveryAnalytics.github.io/web-analytics-handbook/blog/why-ga"/>
-        <updated>2021-08-22T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[구글 애널리틱스는 구글이 제공하는 웹 분석 서비스입니다.]]></summary>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[GA URL fragmentation Issue]]></title>
         <id>url-fragmentation</id>
         <link href="https://EveryAnalytics.github.io/web-analytics-handbook/blog/url-fragmentation"/>
         <updated>2021-08-22T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[URL fragmentation 이슈란?]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why Google Analytics?]]></title>
+        <id>why-ga</id>
+        <link href="https://EveryAnalytics.github.io/web-analytics-handbook/blog/why-ga"/>
+        <updated>2021-08-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[구글 애널리틱스는 구글이 제공하는 웹 분석 서비스입니다.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello]]></title>
