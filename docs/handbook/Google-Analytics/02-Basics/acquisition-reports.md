@@ -50,3 +50,6 @@ tags: [GoogleAnalytics, GA]
 
 - UA : _획득 > 전체 트래픽 > 추천_
 - GA4: _수명 주기 > 획득 > 트래픽 획득 > 비교추가 클릭 > 측정기준 매체 선택/측정기준 값 referral 선택_
+## 4. 참고자료
+
+- [https://analytics.google.com/analytics/academy](https://analytics.google.com/analytics/academy)
