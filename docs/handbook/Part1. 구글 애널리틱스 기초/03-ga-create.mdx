@@ -1,0 +1,78 @@
+---
+tags: [GoogleAnalytics, GA]
+sidebar_collapsed: false
+---
+
+import ChatBox from '@site/src/components/ChatBox';
+
+# GA에 내 사이트용 공간 만들기
+
+아직은 코딩 없음! 구글 애널리틱스에 가입 후 공간 먼저 만들어봐요.
+
+### 🦝 너구리의 할 일
+
+✅ 후르츠스토어 계정 만들기 <br/>
+✅ 후르츠스토어 웹 속성 만들기
+
+## 0. 사전준비: 구글 계정 로그인
+
+구글 애널리틱스는 구글 계정으로 만들 수 있습니다. 로그인 후 구글에 'Google analytics' 검색 후 최상단 링크를 클릭합니다.
+
+:::note tip: 회사용이라면?
+회사 제품에 GA를 연동하는 중이라면 꼭! 회사 공용 구글 계정을 준비해주세요.<br/>
+yurim@toss.im이 아닌 analytics@toss.im 처럼 나에게 종속되지 않은 회사 계정으로 말이죠.<br/>
+추후에 담당자가 바뀌는 경우를 대비한것입니다.
+:::
+
+GA를 처음 만드는 분들은 아래처럼 뜨고 이미 GA를 써본 적이 있는 분들은 해당 계정 통계 페이지가 보여질거예요.
+![6](https://user-images.githubusercontent.com/3839771/141507246-a27f6145-9a40-4797-b5a1-d3588379fddf.png)
+
+## 1.GA 계정 만들기
+
+'측정 시작'을 누르면 다음과 같이 GA 계정을 만드는 화면이 뜹니다.
+
+![6](https://user-images.githubusercontent.com/3839771/141508187-7d2c8137-684e-4c10-bc99-b81dbc50e0ed.png)
+
+(이미 GA를 써본적이 있는 분들은 `좌측 하단 톱니바퀴 아이콘` ➞ `계정 만들기 버튼` 을 누르면 같은 화면이 뜰거예요.)
+![6](https://user-images.githubusercontent.com/3839771/141508646-f2f3d17e-80aa-4f0a-a028-db84cb5cdbeb.png)
+
+GA에는 '계정'과 '속성'이 있는데요, 속성 여러개를 포함하는게 계정입니다.
+내가 측정할 서비스를 어떻게 묶어줄지 생각해서 적어주시면 되어요.
+
+너구리는 `후르츠스토어`로 계정 이름을 지었습니다. 추후에 '후르츠스토어 웹', '후르츠스토어 사내 전용' 등 여러 가지 속성을 만들 예정이에요.
+
+## 2. GA 속성 만들기
+
+`다음`버튼을 누르면 속성 설정 화면이 보입니다.
+
+앞으로 우리는 이렇게 만든 '속성'(번역이 살짝 헷갈리죠? ㅎㅎ)을 기준으로 GA 리포트를 볼거예요.
+
+- 후르츠스토어 웹
+- 후르츠스토어 사내 전용
+- 후르츠스토어 모바일앱
+
+등 다양한 속성을 만들 수 있습니다. <br/>
+일단 '후르츠스토어 웹'으로 만들어볼게요!
+
+![6](https://user-images.githubusercontent.com/3839771/141510138-b4170fba-6ff0-479f-8e2c-cc8dc8a027a9.png)
+
+내 서비스에 맞는 비즈니스 정보도 간단히 적어줍니다.
+
+![6](https://user-images.githubusercontent.com/3839771/141510149-fdefea05-46c6-4daf-90ac-bad20c8db4f4.png)
+
+만들기를 누르고 약관 동의까지 누르면 GA에 내 사이트용 공간 만들기 완성!
+
+## 3. 계정, 속성이 잘 만들어졌는지 확인
+
+상단 네비게이션바에 여러분이 만드신 속성 이름이 보인다면 성공입니다🎉
+
+![6](https://user-images.githubusercontent.com/3839771/141511035-e0d7594e-df93-41b7-a657-383eaa92dc0d.png)
+
+눌러보면 내가 만들었던 계정과 속성들이 보입니다. <br/>
+저는 9XD, 후르츠스토어, EveryAnalytics, 블로그 속성을 운영하고 있군요 ㅎㅎ
+
+![6](https://user-images.githubusercontent.com/3839771/141511051-7773c90d-c8ce-45b0-8dbb-7b142f7f090a.png)
+
+<ChatBox avatar="raccoon-dizzy">큰 일 끝냈다! 내 집터 마련 완료.</ChatBox>
+
+다음 장에서는 방금 만든 속성을 우리 웹사이트에 연동해볼거예요.
