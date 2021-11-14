@@ -32,16 +32,25 @@ const ChatBox = ({
 
 const ChatContainer = styled.div`
   display: flex;
-  background: #efeeeebf;
   padding: 0.7em;
-  border-radius: 6px;
+  border-radius: 15px;
   align-items: center;
-  box-shadow: 1px 1px 6px -1px #b6b6b6;
   margin-bottom: 1em;
+  padding: 20px;
 
-  > img {
+  & > img {
     height: 2.5em;
     margin-right: 1em;
+  }
+
+  html[data-theme='light'] & {
+    background-color: #f6f7f8;
+    box-shadow: 1px 1px 5px #dddedf;
+  }
+
+  html[data-theme='dark'] & {
+    background-color: #333437;
+    box-shadow: 1px 1px 5px #2e2f31;
   }
 `;
 
