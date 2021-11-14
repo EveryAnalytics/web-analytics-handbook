@@ -1,12 +1,30 @@
-import React from 'react';
+import useIntersectionObserver from 'hooks/useIntersectionObserver';
+import React, { useEffect } from 'react';
 
-import { WikiWord } from '../../types';
+type wikiTableRowProps = {
+  description: string;
+  name: string;
+  last: boolean;
+  onNext: () => void;
+};
+export default function WikiTableRow({
+  name,
+  description,
+  last,
+  onNext,
+}: wikiTableRowProps) {
+  const { ref, entry } = useIntersectionObserver({ freezeOnceVisible: true });
 
-export default function WikiTableRow({ name, description }: WikiWord) {
-  return (
-    <tr>
+  useEffect(() => {
+    if (entry?.isIntersecting) onNext();
+  }, [entry]);
+
+  const content = (
+    <>
       <td>{name}</td>
       <td>{description}</td>
-    </tr>
+    </>
   );
+
+  return last ? <tr ref={ref}>{content}</tr> : <tr>{content}</tr>;
 }
