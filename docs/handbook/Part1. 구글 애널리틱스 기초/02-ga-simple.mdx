@@ -5,4 +5,88 @@ sidebar_collapsed: false
 
 import ChatBox from '@site/src/components/ChatBox';
 
-# 구글 애널리틱스 찍어먹기
+# 구글 애널리틱스 살짝 맛보기
+
+세부 튜토리얼을 시작하기 전에 구글 애널리틱스와 우리 사이트가 어떻게 연동되는지 알아봅시다.
+이번 페이지에서는 **따라 하지 마시고** 편하게 보시면서 전체 그림을 파악하도록 해요.
+
+(앞으로 구글 애널리틱스를 GA라고 줄여서 부를게요!)
+
+## 1. 먼저, GA에 내 사이트용 공간 만들기
+
+![image_1](https://user-images.githubusercontent.com/53820773/141802530-f566b46a-b4e0-4bba-a5af-24b3d3480551.png)
+
+구글 계정으로 로그인해 GA 사이트에서 우리 사이트(후르츠스토어)용 공간을 만들 거예요.
+버튼 클릭만으로 만들 수 있어서, 네이버 블로그 만드는 것만큼이나 간단합니다.
+
+G로 시작하는 고유한 아이디가 하나 만들어질 거예요. 구버전은 UA로 시작하고 신버전은 G로 시작한답니다. 구버전인 Universal Analytics보다 신버전인 GA4에선 더욱 유연하게 데이터를 수집하고 통합적으로 볼 수 있는 장점이 있는데요, 더 상세한 차이점이 궁금하다면 archive의 [UA와 GA4의 차이점](https://everyanalytics.github.io/web-analytics-handbook/docs/handbook/archive/Google-Analytics/Basics/what-is-the-difference-between-ua-and-ga4)을 참고하세요!
+
+## 2. 내 사이트 코드에 GA 공간 연동하기
+
+![image_2](https://user-images.githubusercontent.com/53820773/141802533-2b6e895f-9f8f-4e32-a705-5acc0b3926ca.png)
+
+내 사이트 코드에 방금 만든 GA 공간을 연결합니다. 고유한 ID값이 포함된 설치 코드를 복사하고 내 사이트 코드에 붙여넣으면 됩니다!
+(모든 페이지에서 실행될 수 있도록 넣어주시면 됩니다.)
+
+설치 코드는 아래와 같이 생겼어요. GA사이트의 `좌측 하단 톱니바퀴 아이콘` ➞ `데이터 스트림` ➞ `태그하기에 대한 안내`에서도 태그 달기에 관한 설명을 볼 수 있습니다.
+
+```html
+<!-- 1. GA코드 설치 -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-여러분공간아이디"
+></script>
+<script>
+  // 2. 사전작업
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  // 3. 내 공간 ID와 연동
+  gtag('config', 'G-여러분공간아이디');
+</script>
+```
+
+배포까지 하면 GA 추적 코드 설치가 끝납니다. 여기까지만 해도 페이지뷰, 방문자 수 등 일부 데이터는 자동으로 수집됩니다. 자동으로 수집되는 데이터 종류가 더 궁금하시다면 [애널리틱스 고객센터](https://support.google.com/analytics/answer/9234069?hl=ko&ref_topic=9756175)에서 확인하실 수 있어요!
+
+![image_3](https://user-images.githubusercontent.com/53820773/141802537-f27263ed-a790-4c7a-911c-d3fc9b22e463.png)
+
+![6](https://user-images.githubusercontent.com/3839771/141500520-d0299899-38e5-4c08-b0a2-4c08f36f9505.png)
+
+쨔잔~ 내 방문이 GA사이트에 모니터링 되고 있어요!
+
+## 3. 이벤트 코드 심기
+
+GA에서 이벤트 수집을 통해 얻은 데이터는 사이트를 관리하는데 중요한 지표로 활용되기 때문에
+이벤트 수집은 가장 핵심인 작업입니다. 우리가 추적하길 원하는 사용자의 행동들에 이벤트 코드를 넣는 거예요.
+사용자들이 웹 사이트에서 할 수 있는 행동들은 여러 가지가 있겠죠?
+
+- 회원가입 버튼 클릭
+- 약관 동의 체크 해제 클릭
+- 스크롤을 어디까지 내리는지
+- 무엇을 검색하는지
+
+GA에선 이를 모두 '이벤트'라고 칭하는데요,
+![image_4](https://user-images.githubusercontent.com/53820773/141802542-31a3e2cf-5807-422c-a695-93a60f673530.png)
+
+회원가입 버튼 클릭을 추적하고 싶다면, 회원가입클릭 코드 안에 GA 이벤트 코드를 다음과 같이 넣어주면 됩니다.
+
+```js
+function 회원가입클릭() {
+  gtag('event', '회원가입클릭'); // GA이벤트 코드
+  // 회원가입 로직을 수행하는 코드 (생략)
+}
+```
+
+![image_5](https://user-images.githubusercontent.com/53820773/141802545-f82481d7-7ac8-42a5-9202-73c560d18c78.png)
+
+이벤트의 이름도 지어주고, 상세 정보도 추가적으로 넘길 수 있어요 (e.g. 무엇을 샀는지, 얼마인지, 어느 페이지인지)
+
+<ChatBox avatar="raccoon-dizzy">
+  생각보다 간단하구만!
+  <br /> GA공간을 만들고, 설치코드를 복붙하고, 이벤트코드를 심어주면 되네?
+</ChatBox>
+
+다음 장에서부턴 여러분도 직접 한땀한땀 따라해 보세요!
